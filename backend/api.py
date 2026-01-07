@@ -27,12 +27,12 @@ def allowed_file(filename):
     """Verifica se a extensão do arquivo é permitida"""
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-@app.route('/health', methods=['GET'])
+@app.route('/api/health', methods=['GET'])
 def health_check():
     """Endpoint de health check"""
     return jsonify({'status': 'healthy', 'message': 'Hit Predictor API is running'})
 
-@app.route('/analyze', methods=['POST'])
+@app.route('/api/analyze', methods=['POST'])
 def analyze_audio():
     """Endpoint principal para análise de áudio"""
     from backend.audio_analyzer import AudioAnalyzer
@@ -99,7 +99,7 @@ def analyze_audio():
             'details': str(e)
         }), 500
 
-@app.route('/supported-formats', methods=['GET'])
+@app.route('/api/supported-formats', methods=['GET'])
 def get_supported_formats():
     """Retorna formatos de áudio suportados"""
     return jsonify({
@@ -107,7 +107,7 @@ def get_supported_formats():
         'max_size_mb': MAX_FILE_SIZE / (1024 * 1024)
     })
 
-@app.route('/genres', methods=['GET'])
+@app.route('/api/genres', methods=['GET'])
 def get_genres():
     """Retorna gêneros musicais disponíveis com modelos ML"""
     return jsonify({
