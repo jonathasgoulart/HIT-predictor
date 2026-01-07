@@ -15,8 +15,9 @@ class AudioAnalyzer:
     def load_audio(self):
         """Carrega o arquivo de áudio"""
         import librosa
-        # Usamos SR reduzido (11025) e duração menor (30s) para economizar RAM no Render
-        self.y, self.sr = librosa.load(self.audio_path, duration=30, sr=11025)
+        # Pulamos os primeiros 30s (intro) e analisamos os próximos 30s (geralmente onde está o refrão/energia)
+        # Usamos SR reduzido (11025) para economizar RAM no Render
+        self.y, self.sr = librosa.load(self.audio_path, offset=30, duration=30, sr=11025)
         return self
     
     def extract_tempo(self):
