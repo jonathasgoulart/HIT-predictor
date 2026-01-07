@@ -10,6 +10,9 @@ class HitPredictor:
     ML_FEATURES = ['bpm', 'energy', 'danceability', 'valence', 'acousticness', 
                    'instrumentalness', 'liveness', 'speechiness', 'loudness', 'duration_ms']
     
+    # Cache global de modelos para evitar recarregamento pesado do disco (economia de RAM)
+    _model_cache = {}
+    
     def __init__(self, genre=None):
         """
         Inicializa preditor
@@ -60,9 +63,18 @@ class HitPredictor:
             if model_files:
                 # Pega o mais recente (último na lista ordenada)
                 latest_model = sorted(model_files)[-1]
-                self.ml_model = joblib.load(latest_model)
+                model_path = str(latest_model)
+                
+                # Verifica se o modelo já está no cache
+                if model_path in self._model_cache:
+                    self.ml_model = self._model_cache[model_path]
+                    print(f"Modelo ML recuperado do cache: {latest_model.name}")
+                else:
+                    self.ml_model = joblib.load(latest_model)
+                    self._model_cache[model_path] = self.ml_model
+                    print(f"Modelo ML carregado do disco e cacheado: {latest_model.name}")
+                
                 self.model_type = 'ml'
-                print(f"Modelo ML carregado: {latest_model.name}")
             else:
                 print(f"Nenhum modelo ML encontrado para genero '{genre}', usando heuristicas")
                 

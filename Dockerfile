@@ -29,5 +29,5 @@ ENV FLASK_APP=backend/api.py
 EXPOSE 5000
 
 # Run the application with Gunicorn for production
-# We use 4 workers and a long timeout since audio analysis can be slow
-CMD gunicorn --bind 0.0.0.0:$PORT --workers 2 --timeout 120 "backend.api:app"
+# We use 1 worker for the free tier to save memory
+CMD gunicorn --bind 0.0.0.0:$PORT --workers 1 --timeout 120 "backend.api:app"
