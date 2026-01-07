@@ -1,6 +1,7 @@
 // Configuração da API
-// Para deploy no Render, use a URL do seu Web Service ou deixe vazio se usar um Proxy
-const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000' : '';
+const API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    ? 'http://localhost:5000'
+    : window.location.origin;
 
 
 // Estado da aplicação
