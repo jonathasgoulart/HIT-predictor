@@ -1,6 +1,7 @@
-import librosa
-import numpy as np
-from scipy import stats
+# Imports pesados movidos para escopo local para economizar memória no boot
+# import librosa
+# import numpy as np
+# from scipy import stats
 
 class AudioAnalyzer:
     """Analisa características de áudio para predição de hits"""
@@ -13,17 +14,21 @@ class AudioAnalyzer:
         
     def load_audio(self):
         """Carrega o arquivo de áudio"""
+        import librosa
         self.y, self.sr = librosa.load(self.audio_path, duration=180)  # Primeiros 3 minutos
         return self
     
     def extract_tempo(self):
         """Extrai BPM (batidas por minuto)"""
+        import librosa
         tempo, _ = librosa.beat.beat_track(y=self.y, sr=self.sr)
         self.features['bpm'] = float(tempo)
         return self
     
     def extract_energy(self):
         """Calcula energia e loudness"""
+        import librosa
+        import numpy as np
         # RMS Energy
         rms = librosa.feature.rms(y=self.y)[0]
         self.features['energy'] = float(np.mean(rms))
@@ -35,6 +40,8 @@ class AudioAnalyzer:
     
     def extract_spectral_features(self):
         """Extrai características espectrais"""
+        import librosa
+        import numpy as np
         # Spectral Centroid (brightness)
         spectral_centroids = librosa.feature.spectral_centroid(y=self.y, sr=self.sr)[0]
         self.features['brightness'] = float(np.mean(spectral_centroids))
@@ -51,6 +58,8 @@ class AudioAnalyzer:
     
     def extract_key(self):
         """Detecta a tonalidade da música"""
+        import librosa
+        import numpy as np
         chroma = librosa.feature.chroma_cqt(y=self.y, sr=self.sr)
         key_index = np.argmax(np.sum(chroma, axis=1))
         keys = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']
@@ -59,6 +68,8 @@ class AudioAnalyzer:
     
     def extract_danceability(self):
         """Calcula dançabilidade baseada em regularidade rítmica"""
+        import librosa
+        import numpy as np
         # Onset strength
         onset_env = librosa.onset.onset_strength(y=self.y, sr=self.sr)
         
@@ -73,12 +84,16 @@ class AudioAnalyzer:
     
     def extract_zero_crossing_rate(self):
         """Taxa de cruzamento por zero (indica percussividade)"""
+        import librosa
+        import numpy as np
         zcr = librosa.feature.zero_crossing_rate(self.y)[0]
         self.features['zero_crossing_rate'] = float(np.mean(zcr))
         return self
     
     def extract_mfcc(self):
         """Extrai MFCCs (características timbrais)"""
+        import librosa
+        import numpy as np
         mfccs = librosa.feature.mfcc(y=self.y, sr=self.sr, n_mfcc=13)
         
         # Média dos primeiros 5 MFCCs (mais relevantes para timbre)
@@ -89,12 +104,15 @@ class AudioAnalyzer:
     
     def calculate_duration(self):
         """Calcula duração da música"""
+        import librosa
         duration = librosa.get_duration(y=self.y, sr=self.sr)
         self.features['duration'] = float(duration)
         return self
     
     def analyze_structure(self):
         """Analisa estrutura da música (variação dinâmica)"""
+        import librosa
+        import numpy as np
         # Segmentação baseada em mudanças espectrais
         chroma = librosa.feature.chroma_cqt(y=self.y, sr=self.sr)
         

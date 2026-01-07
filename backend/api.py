@@ -3,8 +3,8 @@ from flask_cors import CORS
 from werkzeug.utils import secure_filename
 import os
 import traceback
-from backend.audio_analyzer import AudioAnalyzer
-from backend.hit_predictor import HitPredictor
+# from backend.audio_analyzer import AudioAnalyzer
+# from backend.hit_predictor import HitPredictor
 
 app = Flask(__name__, static_folder='../frontend')
 CORS(app)
@@ -41,6 +41,8 @@ def health_check():
 @app.route('/analyze', methods=['POST'])
 def analyze_audio():
     """Endpoint principal para análise de áudio"""
+    from backend.audio_analyzer import AudioAnalyzer
+    from backend.hit_predictor import HitPredictor
     try:
         # Verifica se há arquivo na requisição
         if 'audio' not in request.files:

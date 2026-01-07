@@ -1,5 +1,5 @@
-import numpy as np
-import joblib
+# import numpy as np
+# import joblib
 import os
 from pathlib import Path
 
@@ -70,6 +70,7 @@ class HitPredictor:
                     self.ml_model = self._model_cache[model_path]
                     print(f"Modelo ML recuperado do cache: {latest_model.name}")
                 else:
+                    import joblib
                     self.ml_model = joblib.load(latest_model)
                     self._model_cache[model_path] = self.ml_model
                     print(f"Modelo ML carregado do disco e cacheado: {latest_model.name}")
@@ -84,6 +85,7 @@ class HitPredictor:
     
     def _prepare_ml_features(self, features):
         """Prepara features no formato esperado pelo modelo ML"""
+        import numpy as np
         ml_input = []
         for feature_name in self.ML_FEATURES:
             # Mapeia nomes de features
