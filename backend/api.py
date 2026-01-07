@@ -11,15 +11,6 @@ static_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../fronten
 app = Flask(__name__, static_folder=static_dir)
 CORS(app)
 
-# Servir arquivos estáticos do frontend
-@app.route('/')
-def index():
-    return send_from_directory(app.static_folder, 'index.html')
-
-@app.route('/<path:path>')
-def serve_static(path):
-    # Tenta servir o arquivo estático se não for uma rota da API
-    return send_from_directory(app.static_folder, path)
 
 # Configurações
 UPLOAD_FOLDER = 'uploads'
@@ -149,3 +140,14 @@ if __name__ == '__main__':
     print("\nServidor rodando em http://localhost:5000\n")
     
     app.run(debug=True, host='0.0.0.0', port=5000)
+
+# Servir arquivos estáticos do frontend
+# IMPORTANTE: Estas rotas devem ficar por último para não interceptarem as rotas da API
+@app.route('/')
+def index():
+    return send_from_directory(app.static_folder, 'index.html')
+
+@app.route('/<path:path>')
+def serve_static(path):
+    # Se bater aqui e não for uma rota da API, tenta servir o arquivo estático
+    return send_from_directory(app.static_folder, path)
