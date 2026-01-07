@@ -1,0 +1,7 @@
+genre,accuracy,cv_mean,threshold,model
+brazil,0.61,0.5924736935972891,45.0,brazil_RandomForestClassifier_20260107_125022.pkl
+forro,0.57,0.5049749842771724,41.0,forro_RandomForestClassifier_20260107_125023.pkl
+mpb,0.51,0.48002496878901374,42.0,mpb_RandomForestClassifier_20260107_125024.pkl
+pagode,0.54,0.5225376174518694,45.0,pagode_RandomForestClassifier_20260107_125025.pkl
+samba,0.585,0.5562971098157378,39.0,samba_RandomForestClassifier_20260107_125026.pkl
+sertanejo,0.565,0.5762721410267241,47.0,sertanejo_RandomForestClassifier_20260107_125027.pkl

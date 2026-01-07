@@ -1,0 +1,10 @@
+flask
+flask-cors
+librosa
+pandas
+scikit-learn
+joblib
+numpy
+soundfile
+werkzeug
+gunicorn

@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# Datasets (Heavy files)
+ml/datasets/
+datasets/
+*.csv
+!ml/models/genre_models_summary.csv
+
+# Models (Keep only the compiled models)
+# We want to keep the .pkl files but ignore logs or other temp files
+ml/models/*
+!ml/models/*.pkl
+!ml/models/*.csv
+
+# Uploads
+uploads/
+/tmp/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific temp files
+ml/temp_*
+ml/analyze_*
+ml/public_*
+ml/kaggle_*
+ml/process_*
+ml/prepare_*
+ml/train_*
+ml/create_*
+ml/download_*
+ml/search_*
+ml/add_custom_*

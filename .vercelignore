@@ -1,0 +1,27 @@
+# Ingore raw data and other non-essential files for deployment
+ml/datasets/
+datasets/
+ml/*.py
+!ml/models/*.pkl
+.git
+.gemini
+uploads/
+ml/temp_*
+ml/analyze_*
+ml/public_*
+ml/kaggle_*
+ml/process_*
+ml/prepare_*
+ml/train_*
+ml/create_*
+ml/download_*
+ml/search_*
+ml/add_custom_*
+ml/*.csv
+*.csv
+node_modules
+.venv
+venv
+ENV
+env
+.env

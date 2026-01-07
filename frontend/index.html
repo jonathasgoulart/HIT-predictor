@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hit Predictor - Preveja o Potencial da Sua Música</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🎵</span>
+                <h1>Hit Predictor</h1>
+            </div>
+            <p class="tagline">Descubra o potencial da sua música se tornar um hit</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+
+            <!-- Upload Section -->
+            <section class="upload-section" id="uploadSection">
+                <div class="upload-card">
+                    <div class="upload-icon">🎧</div>
+                    <h2>Envie sua música</h2>
+                    <p class="upload-description">Arraste e solte ou clique para selecionar</p>
+
+                    <div class="drop-zone" id="dropZone">
+                        <div class="drop-zone-content">
+                            <svg class="upload-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="17 8 12 3 7 8"></polyline>
+                                <line x1="12" y1="3" x2="12" y2="15"></line>
+                            </svg>
+                            <p class="drop-text">Arraste seu arquivo aqui</p>
+                            <p class="drop-subtext">ou clique para selecionar</p>
+                            <p class="supported-formats">MP3, WAV, OGG, FLAC, M4A (máx. 50MB)</p>
+                        </div>
+                        <input type="file" id="fileInput" accept=".mp3,.wav,.ogg,.flac,.m4a" hidden>
+                    </div>
+
+                    <div class="selected-file" id="selectedFile" style="display: none;">
+                        <div class="file-info">
+                            <span class="file-icon">🎵</span>
+                            <div class="file-details">
+                                <p class="file-name" id="fileName"></p>
+                                <p class="file-size" id="fileSize"></p>
+                            </div>
+                        </div>
+                        <button class="btn-remove" id="removeFile">✕</button>
+                    </div>
+
+                    <div class="genre-selector">
+                        <label for="genreSelect">Estilo da Música:</label>
+                        <select id="genreSelect" class="input-select">
+                            <!-- Populated by API -->
+                            <option value="generic">Genérico (Heurísticas)</option>
+                        </select>
+                        <p class="genre-hint">A IA usará um modelo calibrado especificamente para este estilo.</p>
+                    </div>
+
+                    <button class="btn-analyze" id="analyzeBtn" disabled>
+                        <span class="btn-text">Analisar Música</span>
+                        <span class="btn-icon">→</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Loading Section -->
+            <section class="loading-section" id="loadingSection" style="display: none;">
+                <div class="loading-card">
+                    <div class="loading-spinner"></div>
+                    <h3>Analisando sua música...</h3>
+                    <p class="loading-text">Extraindo características de áudio</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section" id="resultsSection" style="display: none;">
+
+                <!-- Hit Score Card -->
+                <div class="result-card score-card">
+                    <h2>Potencial de Hit</h2>
+                    <div class="score-display">
+                        <canvas id="scoreGauge"></canvas>
+                        <div class="score-value">
+                            <span class="score-number" id="scoreNumber">0</span>
+                            <span class="score-label">/100</span>
+                        </div>
+                    </div>
+                    <p class="score-description" id="scoreDescription"></p>
+                </div>
+
+                <!-- Features Radar Chart -->
+                <div class="result-card">
+                    <h2>Análise de Características</h2>
+                    <div class="chart-container">
+                        <canvas id="radarChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Audio Features -->
+                <div class="result-card">
+                    <h2>Características da Música</h2>
+                    <div class="features-grid" id="featuresGrid">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+                <!-- Recommendations -->
+                <div class="result-card recommendations-card">
+                    <h2>Recomendações</h2>
+                    <div class="recommendations-list" id="recommendationsList">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+                <!-- New Analysis Button -->
+                <button class="btn-new-analysis" id="newAnalysisBtn">
+                    <span>Analisar Outra Música</span>
+                </button>
+
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Hit Predictor © 2026 - Análise de Música com IA</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="visualizations.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
