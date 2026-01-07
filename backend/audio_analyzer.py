@@ -12,10 +12,8 @@ class AudioAnalyzer:
         self.sr = None
         self.features = {}
         
-    def load_audio(self):
-        """Carrega o arquivo de áudio"""
         import librosa
-        self.y, self.sr = librosa.load(self.audio_path, duration=180)  # Primeiros 3 minutos
+        self.y, self.sr = librosa.load(self.audio_path, duration=60)  # Primeiros 60 segundos para poupar RAM
         return self
     
     def extract_tempo(self):
