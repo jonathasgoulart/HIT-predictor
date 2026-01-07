@@ -6,8 +6,20 @@ import traceback
 # from backend.audio_analyzer import AudioAnalyzer
 # from backend.hit_predictor import HitPredictor
 
-app = Flask(__name__, static_folder='../frontend')
+# Configuração do caminho absoluto para o frontend
+static_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../frontend'))
+app = Flask(__name__, static_folder=static_dir)
 CORS(app)
+
+# Servir arquivos estáticos do frontend
+@app.route('/')
+def index():
+    return send_from_directory(app.static_folder, 'index.html')
+
+@app.route('/<path:path>')
+def serve_static(path):
+    # Tenta servir o arquivo estático se não for uma rota da API
+    return send_from_directory(app.static_folder, path)
 
 # Configurações
 UPLOAD_FOLDER = 'uploads'
@@ -131,18 +143,9 @@ def request_entity_too_large(error):
 if __name__ == '__main__':
     print("Hit Predictor API iniciando...")
     print(f"Pasta de uploads: {os.path.abspath(UPLOAD_FOLDER)}")
+    print(f"Pasta do frontend: {app.static_folder}")
     print(f"Formatos suportados: {', '.join(ALLOWED_EXTENSIONS)}")
     print(f"Tamanho maximo: {MAX_FILE_SIZE / (1024 * 1024):.0f}MB")
     print("\nServidor rodando em http://localhost:5000\n")
     
     app.run(debug=True, host='0.0.0.0', port=5000)
-
-# Servir arquivos estáticos do frontend (Deve ficar por último para não interceptar as rotas da API)
-@app.route('/')
-def index():
-    return send_from_directory(app.static_folder, 'index.html')
-
-@app.route('/<path:path>')
-def serve_static(path):
-    # Se bater aqui e não for uma rota da API, tenta servir o arquivo estático
-    return send_from_directory(app.static_folder, path)
