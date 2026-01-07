@@ -3,8 +3,8 @@ from flask_cors import CORS
 from werkzeug.utils import secure_filename
 import os
 import traceback
-from audio_analyzer import AudioAnalyzer
-from hit_predictor import HitPredictor
+from backend.audio_analyzer import AudioAnalyzer
+from backend.hit_predictor import HitPredictor
 
 app = Flask(__name__, static_folder='../frontend')
 CORS(app)
