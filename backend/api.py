@@ -2,9 +2,14 @@ from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 from werkzeug.utils import secure_filename
 import os
-import traceback
-# from backend.audio_analyzer import AudioAnalyzer
-# from backend.hit_predictor import HitPredictor
+import gc
+
+# Limita o uso de threads de bibliotecas pesadas para evitar picos de RAM
+os.environ['OMP_NUM_THREADS'] = '1'
+os.environ['MKL_NUM_THREADS'] = '1'
+os.environ['OPENBLAS_NUM_THREADS'] = '1'
+os.environ['VECLIB_MAXIMUM_THREADS'] = '1'
+os.environ['NUMEXPR_NUM_THREADS'] = '1'
 
 # Configuração do caminho absoluto para o frontend
 static_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../frontend'))
@@ -90,6 +95,9 @@ def analyze_audio():
             # Remove arquivo temporário
             if os.path.exists(filepath):
                 os.remove(filepath)
+            
+            # Limpeza agressiva de memória
+            gc.collect()
     
     except Exception as e:
         print(f"Erro ao processar áudio: {str(e)}")
