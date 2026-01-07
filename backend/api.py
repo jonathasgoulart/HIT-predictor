@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 from werkzeug.utils import secure_filename
 import os
@@ -6,8 +6,17 @@ import traceback
 from audio_analyzer import AudioAnalyzer
 from hit_predictor import HitPredictor
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='../frontend')
 CORS(app)
+
+# Servir arquivos estáticos do frontend
+@app.route('/')
+def index():
+    return send_from_directory(app.static_folder, 'index.html')
+
+@app.route('/<path:path>')
+def serve_static(path):
+    return send_from_directory(app.static_folder, path)
 
 # Configurações
 UPLOAD_FOLDER = 'uploads'
