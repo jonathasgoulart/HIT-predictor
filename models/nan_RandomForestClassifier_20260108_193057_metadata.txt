@@ -1,0 +1,6 @@
+genre: nan
+model_type: RandomForestClassifier
+features: ['bpm', 'energy', 'danceability', 'valence', 'acousticness', 'instrumentalness', 'liveness', 'speechiness', 'loudness']
+trained_at: 20260108_193057
+dataset_size: 1166
+test_size: 234

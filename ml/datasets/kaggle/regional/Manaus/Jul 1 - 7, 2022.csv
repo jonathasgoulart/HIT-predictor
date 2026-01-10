@@ -1,0 +1,101 @@
+rank,uri,track_name,peak,prev,streak,artist_names
+1,spotify:track:6Ulh9GPYz6JKdv04qc3q2U,Dengo,1,1,8,João Gomes
+2,spotify:track:2qmG7dokbGpDGD0T5wORWt,Balanço da Rede,2,3,16,Matheus Fernandes
+3,spotify:track:5PZAbR6JHYYV9xp5gv0XES,Bandido,2,2,3,Zé Felipe
+4,spotify:track:5vC8UAOHeG95ehRzZChniB,Ai Preto,4,12,3,L7NNON
+5,spotify:track:4QWumyD2uwiePBBha9XBHI,No Ouvidinho,2,4,14,Felipe Amorim
+6,spotify:track:3ShKPhFkexrwl7WoyTtNND,Tchuco Nela,4,5,11,MC Rogerinho
+7,spotify:track:7bhvRvE56NHBvedx0EeALS,Comunicação Falhou - Ao Vivo,6,7,10,Mari Fernandez
+8,spotify:track:3sd2p4kE7xQmFH3lPnFl6h,sentaDONA (Remix) s2,1,6,16,Davi Kneip
+9,spotify:track:0i4UV3HjjvsUuV3BajEXoD,Baile no Morro,9,32,2,MC Tairon
+10,spotify:track:5dFxhpYLOton7aawKsDeiS,Áudio Que Te Entrega,9,10,13,Leo Santana
+11,spotify:track:6bTdZ7xfKp3NqqADJ8HLyj,Vampiro,3,9,14,Matuê
+12,spotify:track:75FEaRjZTKLhTrFGsfMUXR,Running Up That Hill (A Deal With God),11,22,6,Kate Bush
+13,spotify:track:6BF3nZQkAg9qvE0DLVSfyH,Hotel Caro,8,8,4,Baco Exu do Blues
+14,spotify:track:7qD2vjd3btuOgwpQPEY7ci,EU VOU COM CARINHO ELA QUER COM FORÇA,10,11,6,Mc Don Juan
+15,spotify:track:4Dvkj6JhhA12EX05fT7y2e,As It Was,9,18,14,Harry Styles
+16,spotify:track:5zNxUkUW9WiV5oyg6gh2wB,DANÇARINA,1,13,21,PEDRO SAMPAIO
+17,spotify:track:7afaZ37wJJL6880z1NRgJS,Fim de Semana no Rio,6,14,14,Teto
+18,spotify:track:0sjhY8nPIm6cPOQfyUPmJe,ERRO PLANEJADO - Ao Vivo,11,19,12,Luan Santana
+19,spotify:track:1K8AtBJXcdq5mywMnZuARP,Termina Comigo Antes,9,21,14,Gusttavo Lima
+20,spotify:track:6Zw25LRLP0j0MsezDFIUM4,Mal Feito - Ao Vivo,6,17,25,Hugo & Guilherme
+21,spotify:track:6hFwju6M40CKovKBPu5IpY,ACORDA PEDRINHO,2,15,8,Jovem Dionisio
+22,spotify:track:4a0sqvCBo7aRIS4GzBQpnp,Kikando e Me Olhando,16,16,11,MC Braz
+23,spotify:track:5lCAtKxkZL6tFDyGX9t87j,Eu Já Tava Bem - Ao Vivo,13,20,31,Wesley Safadão
+24,spotify:track:7gVzhRCrLRUBEGdS7zNTp0,Malvada,2,24,23,Zé Felipe
+25,spotify:track:1ih3nbYJ0lugsku6065BC5,Me Chama de Amor - Arrochadeira Remix,20,25,8,O Tubarão
+26,spotify:track:5etfNcFAD9M8uibXpYMxfQ,Tu Tava Na Revoada - Ao Vivo,26,33,6,Wesley Safadão
+27,spotify:track:0NBgyml7T0IvUNbXIkcSpH,Malvadão 3,1,23,29,Xamã
+28,spotify:track:72g37RoelSnovZakG5MwnF,Parada Louca,5,29,34,Mari Fernandez
+29,spotify:track:7AwVSKaQxpidrtYBerkHKk,Pipoco,29,80,2,Ana Castela
+30,spotify:track:1RgJ4lexKGNBlKnyxB5SRt,Balazul,28,28,4,Teto
+31,spotify:track:0qYW2jULeN9giEty0ee9Fy,Botadinha Saliente,4,26,21,MC Rogerinho
+32,spotify:track:546dFmvwFGBY7MJOkV5ctq,Todo Seu - Ao Vivo,26,27,9,Jorge & Mateus
+33,spotify:track:53RxHysDJ0cjugMcPymwja,ABALO EMOCIONAL - Ao Vivo,11,31,22,Luan Santana
+34,spotify:track:3ITkrUvAA6gzxer2UIom3P,Molhando o Volante,16,30,30,Jorge & Mateus
+35,spotify:track:14JKzKrJbPDflw8XyATMey,A Maior Saudade - Ao Vivo,17,35,38,Henrique & Juliano
+36,spotify:track:4qsOrxBv09HhNSpsgMRXdC,Esqueça-Me Se For Capaz,1,39,38,Marília Mendonça
+37,spotify:track:71fwkaKdNrxiZZbkzSqmFJ,Que Rabão (feat. Mr. Catra e YG),17,41,10,Anitta
+38,spotify:track:2wSCalnGOnXdAJC0Fn8OUY,Vai Lá Em Casa Hoje,6,40,34,George Henrique & Rodrigo
+39,spotify:track:2LEV3lTRxKqLBfmt5BWkLj,Não Pega Ninguém Ainda (Ao Vivo),35,37,5,Gusttavo Lima
+40,spotify:track:75fCsUnTiDelE4HMd06t4O,Gostosinho Tu Cai,30,36,10,Mc Pepeu
+41,spotify:track:4NJKCE1TBC653P3dCnto0u,Simplesmente Ela,28,38,14,Mc Gabzin
+42,spotify:track:4SIBZgMomGFnrIWjmq7Np8,Desenrola Bate Joga de Ladin (feat. DJ Biel do Furduncinho),6,34,13,L7NNON
+43,spotify:track:0E0OENqh3jaZ4VpDFTOLGj,EU BEM QUE TE AVISEI - TU EMPINOU ELE PEI,25,42,11,Mc Delux
+44,spotify:track:4EVzu5mYyigjyLrryKbZs7,VERMELHO,8,49,21,Gloria Groove
+45,spotify:track:4nRa5qkXIfswPbt20rkslI,Debaixo do Cobertor,45,54,3,Felipe Amorim
+46,spotify:track:347KmRWwYXcZSUgelz7Cit,Konteiner,43,43,3,Filipe Ret
+47,spotify:track:3JFB72hbbt3zy30puJTc3q,Medley Lud Session - Tudo porque você mentiu / penhasco / De rolê / CAFÉ DA MANHÃ ;P / Doutora 3,47,—,1,LUDMILLA
+48,spotify:track:2kJRlOyrxsy7Ot3c5TZ8Q6,Meu Pedaço de Pecado,2,46,38,João Gomes
+49,spotify:track:1M5OUvKG03C0QtzvxRS4Zk,Depende,5,44,24,Dj Guuga
+50,spotify:track:2ebFBmle5uXcdbrCAOvPcZ,Vagabundo Chora - Ao Vivo,44,45,12,Guilherme & Benuto
+51,spotify:track:4can6ssapSsRCEbZZfYL8K,Poesia Acústica 12 - Pra Sempre,23,47,19,Pineapple StormTv
+52,spotify:track:11fqunD6qlOCrRd88kMOk6,Evento Cancelado - Ao Vivo,52,53,6,Henrique & Juliano
+53,spotify:track:3XF598RmEUF3XW4XKo1lyP,Meu Número - Ao Vivo,44,55,11,Hugo & Guilherme
+54,spotify:track:42nZBOwXNdO24Ml032bLBS,Gatilho - Ao Vivo,50,63,15,Matheus & Kauan
+55,spotify:track:2MuWTIM3b0YEAskbeeFE1i,Master Of Puppets,55,—,1,Metallica
+56,spotify:track:5yRgMxdDhdYlbUQNCOlW3o,Não Vou Te Bloquear - Ao vivo,11,48,26,Mc Don Juan
+57,spotify:track:40fRA3sONEHzt20oKvyhRA,Só de Imaginar - Ao Vivo,57,66,4,Mari Fernandez
+58,spotify:track:0dcHD9QhnWRA41zoLnC83X,X1,58,70,3,MC Cabelinho
+59,spotify:track:3v6gYFuAXQcm1EO5yW7yfX,Proteção de Tela,37,51,38,Tarcísio do Acordeon
+60,spotify:track:6nkoWsFZeFt5dUdNmlIceh,Bloqueado - Ao Vivo,6,52,32,Gusttavo Lima
+61,spotify:track:3FkeNbs9Zeiqkr3WkbOiGp,Envolver,1,58,34,Anitta
+62,spotify:track:0sPtV4stCHkFJB6GpoaZ1f,CAFÉ DA MANHÃ ;P,7,84,21,Luísa Sonza
+63,spotify:track:7HjZD0NPC1hzFpjUjo45GR,Me Sinto Abençoado,29,56,30,Mc Poze do Rodo
+64,spotify:track:5F2xRvRFkxDvqdFtUNAEyw,Se For Amor,10,60,38,João Gomes
+65,spotify:track:5VTjBl3ddZEiG2LrH4VzyR,Toma Toma Vapo Vapo,1,57,34,Zé Felipe
+66,spotify:track:4PF5eA9ng97UcU5hjaqQnc,Meu Cafofo,48,62,15,João Gomes
+67,spotify:track:6bwx7pcKJY05D9S6CVa1k6,Nem Namorado e Nem Ficante - Ao Vivo | Faixa Bônus,65,65,5,Israel & Rodolffo
+68,spotify:track:6xGruZOHLs39ZbVccQTuPZ,Glimpse of Us,59,59,3,Joji
+69,spotify:track:6Lk3kU7JcQ5dZ7jbmhJzQN,Melhor Ser uma Saudade,33,61,21,Zé Neto & Cristiano
+70,spotify:track:48LEhRW4gLMCVSYFEZvt8b,Assume a Gente - Ao Vivo,68,68,3,João Bosco e Gabriel
+71,spotify:track:5DhiTYpD599fu3q7fCepgL,Dior,71,—,1,BIN
+72,spotify:track:3QKv1RIrWsLTA63oxscVrZ,Meu Bem,35,71,38,João Gomes
+73,spotify:track:0yL7K9MzC20uBesZTPY81r,Pandora,10,64,30,DJ Matt D
+74,spotify:track:3IMLoeLerS7TMpKjxUgAhx,Arranhão - Ao Vivo,4,75,38,Henrique & Juliano
+75,spotify:track:6KKT8dzP21J4WwBp9swjob,Sonho Dos Cria,73,73,3,Filipe Ret
+76,spotify:track:6o6PKPQH9c6egl0VROLpLN,P Q P,50,78,12,NATTAN
+77,spotify:track:2AQJRDfQJbfgmTf5e62Czl,Sem Dó,34,74,27,Matuê
+78,spotify:track:0OJ8KWhqLMHkfI59yh398v,Sei Que Tu Gosta Muito,56,77,13,L7NNON
+79,spotify:track:3fSxnkjdgPucRCskjmAlgx,A Cara do Crime 3 (Brinde à Liberdade),46,50,6,Mc Poze do Rodo
+80,spotify:track:3QGxgNaqaFSpORp2OVLXHR,212,3,72,25,Chefin
+81,spotify:track:5r9CZJMoMmxio2AnJdxuDS,Pot-Pourri: Melhor Eu Ir / Ligando Os Fatos / Sonho de Amor / Deixa Eu Te Querer - Ao Vivo,65,90,24,Grupo Menos É Mais
+82,spotify:track:2342lPAZ9zddhgAQEiLx4V,ANACONDA *o* ~~~,15,100,30,Luísa Sonza
+83,spotify:track:3YvE7uo4ffseBoJPh8IhHp,Presepada,5,82,35,Marília Mendonça
+84,spotify:track:1iaPDgTbsKrlznVu13EWIf,ESSÊNCIA DE CRIA,70,81,23,MC Cabelinho
+85,spotify:track:6EDj1nbl9wo6ivGI1t59G4,Idiota,19,85,25,Jão
+86,spotify:track:0cHflpV8SSGbE0NKaasEfT,F* F* M*,55,79,16,Filipe Ret
+87,spotify:track:68qqVn5kHBv4zc45SDGLnh,Corte Americano,54,76,18,Filipe Ret
+88,spotify:track:7aZusA4cWXz3Wv9e9uhavz,Quer Voar,16,83,38,Matuê
+89,spotify:track:13Rf6RaZT13TW4xLQR3MQr,Poesia Acústica #6: Era uma Vez,82,89,18,Pineapple StormTv
+90,spotify:track:0FqVtQxRD3HsPltldG5v5M,Aquelas Coisas,14,88,38,João Gomes
+91,spotify:track:0tM4J8aID6qYZOE3e14sCj,Acordo - Ao Vivo,38,69,33,Henrique & Juliano
+92,spotify:track:7fzgTaVhUxmEzjtcd9NdWo,Cê Tá Preparada - Ao Vivo,21,—,1,Tayrone
+93,spotify:track:4fSHADbZbhpZCT9oJpxwbP,Ameaça,3,91,37,Paulo Pires
+94,spotify:track:4lsDFVKOVwPeAVw1hPOn7G,Vontade De Morder,16,98,24,Simone & Simaria
+95,spotify:track:5Z9KJZvQzH6PFmb8SNkxuk,INDUSTRY BABY (feat. Jack Harlow),20,—,1,Lil Nas X
+96,spotify:track:1HhNoOuqm1a5MXYEgAFl8o,Enemy (with JID) - from the series Arcane League of Legends,36,—,1,Imagine Dragons
+97,spotify:track:4aoZBldNDVYmTwmeoI49ud,O Poder Dessa Garota,97,—,1,Mc Gabzin
+98,spotify:track:0p5QJ6nbkeKlNmrXzG8mF0,Digo Ou Não Digo,63,99,9,João Gomes
+99,spotify:track:6Uj1ctrBOjOas8xZXGqKk4,Woman,47,97,27,Doja Cat
+100,spotify:track:7G2LNG0EDgU5IyeeP6pevW,Pode Apostar - Ao Vivo,100,—,1,Mari Fernandez

@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -16,10 +18,15 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <span class="logo-icon">🎵</span>
+                <svg class="logo-svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 18V5l12-2v13"></path>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <circle cx="18" cy="16" r="3"></circle>
+                </svg>
                 <h1>Hit Predictor</h1>
             </div>
-            <p class="tagline">Descubra o potencial da sua música se tornar um hit</p>
+            <p class="tagline">Análise profissional de potencial comercial fonográfico</p>
         </div>
     </header>
 
@@ -30,14 +37,15 @@
             <!-- Upload Section -->
             <section class="upload-section" id="uploadSection">
                 <div class="upload-card">
-                    <div class="upload-icon">🎧</div>
-                    <h2>Envie sua música</h2>
-                    <p class="upload-description">Arraste e solte ou clique para selecionar</p>
+                    <div class="upload-header">
+                        <h2>Upload de Master</h2>
+                        <p class="upload-description">Arraste seus arquivos de áudio para iniciar o processamento</p>
+                    </div>
 
                     <div class="drop-zone" id="dropZone">
                         <div class="drop-zone-content">
-                            <svg class="upload-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
+                            <svg class="upload-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                                 <polyline points="17 8 12 3 7 8"></polyline>
                                 <line x1="12" y1="3" x2="12" y2="15"></line>
@@ -46,27 +54,39 @@
                             <p class="drop-subtext">ou clique para selecionar</p>
                             <p class="supported-formats">MP3, WAV, OGG, FLAC, M4A (máx. 50MB)</p>
                         </div>
-                        <input type="file" id="fileInput" accept=".mp3,.wav,.ogg,.flac,.m4a" hidden>
+                        <input type="file" id="fileInput" accept=".mp3,.wav,.ogg,.flac,.m4a" multiple hidden>
                     </div>
 
-                    <div class="selected-file" id="selectedFile" style="display: none;">
-                        <div class="file-info">
-                            <span class="file-icon">🎵</span>
-                            <div class="file-details">
-                                <p class="file-name" id="fileName"></p>
-                                <p class="file-size" id="fileSize"></p>
-                            </div>
+                    <div class="selected-files-container" id="selectedFilesContainer" style="display: none;">
+                        <h3 class="files-title">Arquivos em Fila</h3>
+                        <div class="files-list" id="filesList">
+                            <!-- Populado por JS -->
                         </div>
-                        <button class="btn-remove" id="removeFile">✕</button>
                     </div>
 
                     <div class="genre-selector">
-                        <label for="genreSelect">Estilo da Música:</label>
-                        <select id="genreSelect" class="input-select">
-                            <!-- Populated by API -->
-                            <option value="generic">Genérico (Heurísticas)</option>
-                        </select>
-                        <p class="genre-hint">A IA usará um modelo calibrado especificamente para este estilo.</p>
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <label>Estilos Musicais para Análise:</label>
+                            <button class="btn-suggest-genres" id="suggestGenresBtn" disabled style="
+                                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                                color: white;
+                                border: none;
+                                padding: 8px 16px;
+                                border-radius: 8px;
+                                font-size: 13px;
+                                font-weight: 600;
+                                cursor: pointer;
+                                transition: all 0.3s ease;
+                                box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+                            ">
+                                ✨ Sugerir Gêneros
+                            </button>
+                        </div>
+                        <p class="genre-instruction">Selecione um ou mais estilos para comparar as notas.</p>
+                        <div id="genresGrid" class="genres-checkbox-grid">
+                            <!-- Populado por JS via API -->
+                        </div>
                     </div>
 
                     <button class="btn-analyze" id="analyzeBtn" disabled>
@@ -81,22 +101,55 @@
                 <div class="loading-card">
                     <div class="loading-spinner"></div>
                     <h3>Analisando sua música...</h3>
-                    <p class="loading-text">Extraindo características de áudio</p>
+                    <p class="loading-text" id="loadingText">Extraindo características de áudio</p>
                     <div class="progress-bar">
                         <div class="progress-fill" id="progressFill"></div>
                     </div>
                 </div>
             </section>
 
+            <!-- Batch Results Section -->
+            <section class="batch-results-section" id="batchResultsSection" style="display: none;">
+                <div class="result-card">
+                    <h2>Comparativo de Potencial de Hit</h2>
+                    <div class="table-responsive">
+                        <table class="comparison-table" id="comparisonTable">
+                            <thead>
+                                <tr id="tableHeader">
+                                    <th>Música</th>
+                                    <!-- Gêneros serão inseridos aqui -->
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                <!-- Resultados serão inseridos aqui -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="batch-footer">
+                    <button class="btn-new-batch" id="newBatchBtn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                            <path d="M3 3v5h5"></path>
+                        </svg>
+                        Nova Análise de Lote
+                    </button>
+                </div>
+            </section>
+
             <!-- Results Section -->
             <section class="results-section" id="resultsSection" style="display: none;">
+                <div class="results-header" style="margin-bottom: 2rem; display: flex; align-items: center; gap: 1rem;">
+                    <button class="btn-back" id="backToBatchBtn" style="display: none;">← Voltar</button>
+                    <h2 id="individualTitle">Análise de Detalhes</h2>
+                </div>
 
                 <!-- Hit Score Card -->
                 <div class="result-card score-card">
-                    <h2>Potencial de Hit</h2>
+                    <h2 id="currentAnalysisSongName">Potencial de Hit</h2>
                     <div class="score-display">
-                        <canvas id="scoreGauge"></canvas>
-                        <div class="score-value">
+                        <div class="score-value-static">
                             <span class="score-number" id="scoreNumber">0</span>
                             <span class="score-label">/100</span>
                         </div>
@@ -104,11 +157,19 @@
                     <p class="score-description" id="scoreDescription"></p>
                 </div>
 
-                <!-- Features Radar Chart -->
-                <div class="result-card">
-                    <h2>Análise de Características</h2>
-                    <div class="chart-container">
+                <!-- Features Radar Chart (O Gráfico de Aranha) -->
+                <div class="result-card chart-card">
+                    <h2>Comparação de Perfil Musical</h2>
+                    <div class="chart-container" id="radarContainer">
                         <canvas id="radarChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Thermometer Details -->
+                <div class="result-card">
+                    <h2>Detalhamento Precision</h2>
+                    <div id="thermometerContainer">
+                        <!-- Polulado por JS -->
                     </div>
                 </div>
 
@@ -149,6 +210,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <script src="visualizations.js"></script>
     <script src="app.js"></script>
+    <script src="quick-wins.js"></script>
 </body>
 
 </html>

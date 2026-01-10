@@ -1,0 +1,101 @@
+rank,uri,track_name,peak,prev,streak,artist_names
+1,spotify:track:5VTjBl3ddZEiG2LrH4VzyR,Toma Toma Vapo Vapo,1,1,6,Zé Felipe
+2,spotify:track:4qsOrxBv09HhNSpsgMRXdC,Esqueça-Me Se For Capaz,1,2,10,Marília Mendonça
+3,spotify:track:2wG1R0uDFwyobcWzVssC1J,GALOPA,2,3,10,PEDRO SAMPAIO
+4,spotify:track:4fSHADbZbhpZCT9oJpxwbP,Ameaça,3,4,9,Paulo Pires
+5,spotify:track:72g37RoelSnovZakG5MwnF,Parada Louca,5,9,6,Mari Fernandez
+6,spotify:track:3YvE7uo4ffseBoJPh8IhHp,Presepada,5,5,7,Marília Mendonça
+7,spotify:track:1c4htMHiolERc0YJvZNdlc,Vai Lá Em Casa Hoje,7,8,6,George Henrique & Rodrigo
+8,spotify:track:3IMLoeLerS7TMpKjxUgAhx,Arranhão - Ao Vivo,4,7,10,Henrique & Juliano
+9,spotify:track:2RGIuYTsyyHoOCqW0krvNE,Coração Cachorro,1,6,10,Avine Vinny
+10,spotify:track:053zWWZDziDJd3U94x8RuP,Todo Mundo Menos Você,3,10,10,Marília Mendonça
+11,spotify:track:7ARoqP7G8UYW8SyYPyPp7k,NO CHÃO NOVINHA,11,13,2,Anitta
+12,spotify:track:2kJRlOyrxsy7Ot3c5TZ8Q6,Meu Pedaço de Pecado,2,11,10,João Gomes
+13,spotify:track:4kGdnA7FzSVsXC29LPghej,Revoada No Colchão,2,12,10,Zé Felipe
+14,spotify:track:2jwrYBGz7osKI31v50bS7b,Putariazinha,5,14,10,Felipe Amorim
+15,spotify:track:0JdkDCdrhMOaeXjIZdeBXN,Ela me Falou Que Quer Rave,10,15,8,MC Levin
+16,spotify:track:50gPsfGHy5OnPauA9455DM,Rolê,8,17,10,Tarcísio do Acordeon
+17,spotify:track:14JKzKrJbPDflw8XyATMey,A Maior Saudade - Ao Vivo,17,19,10,Henrique & Juliano
+18,spotify:track:4XiFqfUXyTwOChvMLKKi0T,Sem Sentimento,4,16,10,DG e Batidão Stronda
+19,spotify:track:6nkoWsFZeFt5dUdNmlIceh,Bloqueado - Ao Vivo,19,23,4,Gusttavo Lima
+20,spotify:track:6qdJZIjxrPaJjaGqlXFLSs,Nota de Repúdio - Ao Vivo,11,24,10,Gusttavo Lima
+21,spotify:track:6T6SDJszPbuMCBpSm3aS3G,Carinha de Neném,14,18,10,Japãozin
+22,spotify:track:7xVSNhAUQhUIpwfR6lTOwA,Por Supuesto,12,20,9,Marina Sena
+23,spotify:track:0FqVtQxRD3HsPltldG5v5M,Aquelas Coisas,14,21,10,João Gomes
+24,spotify:track:1bWBG6IkMnDr3qvCKSvQT7,Baby Me Atende - Ao Vivo,12,22,10,Matheus Fernandes
+25,spotify:track:7pvrsbBKUQI2QmA74WCJa5,Ela e Ela,15,25,10,Zé Neto & Cristiano
+26,spotify:track:17QN5kFprJqHdHLMj7hz4s,Ficha Limpa - Ao Vivo,17,29,10,Gusttavo Lima
+27,spotify:track:48Ll1C6qAnP2UjnopQDh4a,Bala Love,9,26,10,Mc Anjim
+28,spotify:track:62d4BfCTUHdOsARRETHLDz,Mete a Louca,22,27,6,MC Rogerinho
+29,spotify:track:2s9BO8c0co0PmgBiUoTT17,A QUEDA,14,30,10,Gloria Groove
+30,spotify:track:1wdhj1r7aeWVDUl9d18YKu,Expectativa x Realidade,25,31,10,Matheus & Kauan
+31,spotify:track:5F2xRvRFkxDvqdFtUNAEyw,Se For Amor,10,32,10,João Gomes
+32,spotify:track:2R9IrE42Mw4zdUXAEFNiZL,Senta Danada,19,33,10,Zé Felipe
+33,spotify:track:1tYJnXtKLoWVIL4lZOouQG,Cê Tá Preparada - Ao Vivo,33,35,10,Tayrone
+34,spotify:track:0yL7K9MzC20uBesZTPY81r,Pandora,34,50,2,DJ Matt D
+35,spotify:track:0DsPj89zlY3Us7xb5cXK5h,"Trava na Pose, Chama no Zoom, Da um Close (feat. Mc Rennan)",6,28,10,DJ Patrick Muniz
+36,spotify:track:2ixi9HWJw5lnLDmRMsiCS5,Você Beberia Ou Não Beberia?,22,36,10,Zé Neto & Cristiano
+37,spotify:track:7aZusA4cWXz3Wv9e9uhavz,Quer Voar,16,34,10,Matuê
+38,spotify:track:6RMYuqlTn8777j5arY9zhC,Cena de Amor,24,37,10,Brisa Star
+39,spotify:track:3ITkrUvAA6gzxer2UIom3P,Molhando o Volante,39,76,2,Jorge & Mateus
+40,spotify:track:3v6gYFuAXQcm1EO5yW7yfX,Proteção de Tela,39,39,10,Tarcísio do Acordeon
+41,spotify:track:6WxpU2F5gwTzwYsAalI6nI,Motel Afrodite,16,38,7,Marília Mendonça
+42,spotify:track:28m65cMH7QXHzFnZSTtNHY,Não Sei o Que Lá,22,40,7,Marília Mendonça
+43,spotify:track:4AAIAVjSyiq1N7SXKkwXZe,Troca de Calçada,11,42,7,Marília Mendonça
+44,spotify:track:6AQqsFYtCQi9m7MJcMjGup,Superação Digital,31,46,10,Xand Avião
+45,spotify:track:6fe5D0ivKnpXFMAnoSRjah,Localiza Aí BB,38,45,10,Vitor e Luan
+46,spotify:track:5BFz4pXzknmYYctjvLKJAB,Sentadinha Descarada,46,47,4,Zé Vaqueiro
+47,spotify:track:0tM4J8aID6qYZOE3e14sCj,Acordo - Ao Vivo,47,65,5,Henrique & Juliano
+48,spotify:track:3QKv1RIrWsLTA63oxscVrZ,Meu Bem,35,49,10,João Gomes
+49,spotify:track:2ookQf9qP2qiBuNFnNXyfl,Chega E Senta - Ao Vivo,13,43,10,John Amplificado
+50,spotify:track:7fnXPPBrHSGb15iPvVgFd8,Alvejante,38,54,10,Priscila Senna
+51,spotify:track:5Z9KJZvQzH6PFmb8SNkxuk,INDUSTRY BABY (feat. Jack Harlow),20,41,10,Lil Nas X
+52,spotify:track:1r9xUipOqoNwggBpENDsvJ,Enemy (with JID) - from the series Arcane League of Legends,48,48,5,Imagine Dragons
+53,spotify:track:5emL18Je5WuruMhWr0gj4w,Eu Já Tava Bem - Ao Vivo,53,57,3,Wesley Safadão
+54,spotify:track:79Wou8NwYEFzTyDQudjENF,Desbloqueado - Ao Vivo,42,55,10,Diego & Victor Hugo
+55,spotify:track:4PQdrXMDHDPl1RczrrlADd,MORENA,28,44,10,Luan Santana
+56,spotify:track:07Kp3cAQRY0iPp4ATMoehM,Ficante Fiel,52,60,6,Mad Dogz
+57,spotify:track:6Lrzxd7ST5oQ6FYKXKH7Ia,Vagabundo,40,56,10,Matheus & Kauan
+58,spotify:track:1QiZYlh3oZg3zgn8eS99aB,Mete Um Block Nele,41,59,10,João Gomes
+59,spotify:track:0NBgyml7T0IvUNbXIkcSpH,Malvadão 3,59,—,1,Xamã
+60,spotify:track:3IAfUEeaXRX9s9UdKOJrFI,Envolver,42,53,6,Anitta
+61,spotify:track:1d7AtPeraWVsvI4U1YTHt1,Vestido Coladinho,61,68,3,Max e Luan
+62,spotify:track:3Lw41pfko5XMrsHRtlbo2k,Bota a Mão no Chão,42,51,6,Felipe Cardoso DJ
+63,spotify:track:2eFsVynOiCxtI4kvX0XClm,LEILÃO,58,58,3,Gloria Groove
+64,spotify:track:0lSY2zOUEeB5sfSnkw8M9l,Será que Dá Certo,64,69,5,Vitor Fernandes
+65,spotify:track:2xebCnKCjYWBhJ4Ai8hO5E,Set dos Casados,61,61,4,Mc Davi
+66,spotify:track:7HjZD0NPC1hzFpjUjo45GR,Me Sinto Abençoado,63,63,2,Mc Poze do Rodo
+67,spotify:track:3jSG8oE8doxDxmpe5GlFee,"Não, Não Vou",37,66,10,Mari Fernandez
+68,spotify:track:1G0kLIS0hE6uUPlIE9gksp,Fã Clube,34,62,7,Marília Mendonça
+69,spotify:track:6m84TzSTM5nbwZxIxkYHz6,Namorando Com Saudade,59,64,5,Jorge & Mateus
+70,spotify:track:0PH49SrRKOFVWF81PobhW6,Unha de Gel,63,71,6,Os Barões Da Pisadinha
+71,spotify:track:7b0W6Ra4fEoTTUWjQW1lpl,Imagine a Cena,65,75,6,Eric Land
+72,spotify:track:4fouWK6XVHhzl78KzQ1UjL,abcdefu,67,67,4,GAYLE
+73,spotify:track:2342lPAZ9zddhgAQEiLx4V,ANACONDA *o* ~~~,73,74,2,Luísa Sonza
+74,spotify:track:3ZBVlZVOynUEw2Aphgt2cN,Metade de um Abraço,41,73,10,Zé Vaqueiro
+75,spotify:track:7nsk0cwY5kfxBT21WEzmC0,Ele Não Te Merece,69,83,6,Wesley Safadão
+76,spotify:track:0NvVVP3Q0oSbfBUZ48vCHs,Tiffany,44,52,8,MD Chefe
+77,spotify:track:5AhnPqydkYbZAp4NkyJ7ED,ATENÇÃO,69,70,6,PEDRO SAMPAIO
+78,spotify:track:6ve9hbVnSgJ0vrsRpj18OH,Não Me Arranha - Ao Vivo,34,82,10,Gusttavo Lima
+79,spotify:track:2YBKO08Wkc3eP5JdUSwng8,Eu Tenho a Senha,49,79,10,João Gomes
+80,spotify:track:0V671zjVuEoXIQDooIsefn,Ela Não Vai Voltar,65,86,6,João Gomes
+81,spotify:track:3HquWF2pZmWYu3WAEP9Heb,Só Não Divulga,59,85,4,Fernando & Sorocaba
+82,spotify:track:41pFFOnh1glVNIlrWOpBjb,Se Joga no Passinho,34,89,10,Brisa Star
+83,spotify:track:1X1jbaEN1a7wYrCXj4C5Vx,Morena (feat. João Gomes),83,88,3,Whindersson Nunes
+84,spotify:track:2PZmUFZGlUqkYJL0s0Cl6C,Dar uma Namorada - Ao Vivo,84,—,1,Israel & Rodolffo
+85,spotify:track:5PjdY0CKGZdEuoNab3yDmX,STAY (with Justin Bieber),51,77,10,The Kid LAROI
+86,spotify:track:3hycwch1V1aCbKGlcfKg0I,"Deu Meia Noite, Eu Sumi, Geral Soltando Fogos",72,72,3,Mc Delux
+87,spotify:track:1hs2hRwPfyFLoYIf6jY1W7,Zero Saudade - Ao Vivo,29,81,10,Os Barões Da Pisadinha
+88,spotify:track:46IZ0fSY2mpAiktS3KOqds,Easy On Me,32,78,6,Adele
+89,spotify:track:49GdoM9fiTXVOx1a6JTokJ,Assalto Perigoso,89,—,1,Melody
+90,spotify:track:1h4u5t0EJZki8ieNGwwFXc,Volta Comigo BB,68,90,6,Zé Vaqueiro
+91,spotify:track:2MZQAvsA7aZDssppBLRxYp,Batom de Cereja - Ao Vivo,76,94,5,Israel & Rodolffo
+92,spotify:track:6Uj1ctrBOjOas8xZXGqKk4,Woman,64,80,6,Doja Cat
+93,spotify:track:3ibiPPqHxdmX4nNp4kNHE9,Passatempo,45,96,3,Wesley Safadão
+94,spotify:track:6mC5wOykw6GBFVXI8SFdNT,Volta Rapariga,47,—,1,Vitinho Imperador
+95,spotify:track:3V7jLMYvvg4BHi4tmDveNc,Faking Love (feat. Saweetie),61,95,2,Anitta
+96,spotify:track:53BkPZwlaLbW77uV9BnJkl,Eu Fiz o Jogo Virar,44,84,10,Mc Poze do Rodo
+97,spotify:track:1tdDDOJRdbo1Uz47D1k62G,Passinho Debochado,23,—,1,Dan Ventura
+98,spotify:track:6Aw11M9NT2tBeEj3mPKrjy,Facas - Ao Vivo,94,99,3,Diego & Victor Hugo
+99,spotify:track:0wRn3ggAY1fIupTaVigdza,A Cara do Crime (Nós Incomoda),46,87,6,Mc Poze do Rodo
+100,spotify:track:1wZ59VKgYD5Rho6YYvrjPB,Vou falar que não quero,91,—,1,Vitor Fernandes

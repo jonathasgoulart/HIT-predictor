@@ -1,0 +1,101 @@
+rank,uri,track_name,peak,prev,streak,artist_names
+1,spotify:track:35D06z7kmwMmYYbyJ0BkSm,Daqui pra Sempre,1,1,11,Manu
+2,spotify:track:2InS5VWKJQbsFBKOsf1cJB,Let's Go 4,2,2,12,Dj GBR
+3,spotify:track:6zLBR9izBeZ1d0pfuwJgRa,Tipo Hollywood,3,12,4,Mc Ws da leste
+4,spotify:track:00ZKeP47bZtswtANkvxz2j,Baile do Bruxo,3,3,7,Tropa do Bruxo
+5,spotify:track:4f0aDk7HX37SfzerfznYlr,Lapada Dela - Ao Vivo,4,5,38,Grupo Menos É Mais
+6,spotify:track:54u86CmMqGI1rRuULlTqaB,Toca o Trompete,1,6,20,Felipe Amorim
+7,spotify:track:7DkhndGTKaqkFxxKN7XlAh,Manda um Oi - Ao Vivo,4,4,29,Guilherme & Benuto
+8,spotify:track:7GjAXYuxjuXPbQJzRnNdob,Pane no Sistema,6,7,7,GREGO
+9,spotify:track:42JNab8NPeCADJ9D3Cl5wS,Barulho Do Foguete - Ao Vivo,8,8,13,Zé Neto & Cristiano
+10,spotify:track:7dKqPh21HpsysZvRWyNeM1,Bênçãos Que Não Têm Fim (Counting My Blessings),10,20,3,Isadora Pompeo
+11,spotify:track:4YKujFSyakVjLdH1sDllVc,Dois Fugitivos - Ao Vivo,6,9,11,Simone Mendes
+12,spotify:track:6AENBD8I0mDGglFqrRZGu7,Canudinho - Ao Vivo,6,10,14,Gusttavo Lima
+13,spotify:track:64CovjRwInpOJW4PiGMprY,Faz um Vuk Vuk (Teto Espelhado),2,11,19,MC Kevin o Chris
+14,spotify:track:53PpijFATt35Zxfl6LTxoK,Leão,1,18,52,Marília Mendonça
+15,spotify:track:3XIXklO3e0uWUAUkOR7NLI,DENTRO DA HILUX,7,13,14,Luan Pereira
+16,spotify:track:2BlFIe0712LBUtTHxbqjme,Love Gostosinho - Ao Vivo,2,14,48,NATTAN
+17,spotify:track:56JVZMurnXPoy1HbB4dcNV,Abismo,17,23,6,Manu
+18,spotify:track:6vq7r1Pqd3pyI07u63cPZV,Erro Gostoso - Ao Vivo,1,26,44,Simone Mendes
+19,spotify:track:4uqJelb9THHmJ3OCohg4ZJ,Nosso Quadro,2,27,43,AgroPlay
+20,spotify:track:7lTVXJfNK4xaJSUXCUac6a,Fode Bem,3,16,19,Felipe Amorim
+21,spotify:track:4hKLzFvNwHF6dPosGT30ed,Novo Balanço,5,25,29,Veigh
+22,spotify:track:0fABszUFNbNq9IW503Gj8v,Tá OK,1,22,28,DENNIS
+23,spotify:track:6drlqBh6BeYZinmYQ9qR2n,Furduncinho do Rogerinho,8,17,15,MC Rogerinho
+24,spotify:track:2cZ62VBKsdZ7u1kKKJdFOc,Sou Musa do Verão,13,15,5,Marshmello
+25,spotify:track:0wuj2T6IZtotux1Jjluo7m,Cama Repetida,25,41,2,Leo Santana
+26,spotify:track:4Z2i41GDQyu3KRpBavEnyR,Solteiro Forçado - Boiadeira Internacional,7,19,22,Ana Castela
+27,spotify:track:2twZl1jsRbJRTNCE6VB6eW,10 Carros,27,97,2,Chefin
+28,spotify:track:4zNy0cxc4p36OLdPr0sI6h,MONTAGEM ANOS 2000,16,24,11,MC Maneirinho
+29,spotify:track:1Vy9Wn5sbiduZKBqBlH3Mc,Ballena,6,29,21,Vulgo FK
+30,spotify:track:07DskqQ1NbTiotX1WIV7ob,Piloto,4,21,12,Flora Matos
+31,spotify:track:6xRDvureEBwHgwAYDufbJL,Chorei na Vaquejada,13,34,32,Eric Land
+32,spotify:track:3PH1nUysW7ybo3Yu8sqlPN,Seu Brilho Sumiu - Ao Vivo,2,38,40,Israel & Rodolffo
+33,spotify:track:4zW6JV4aqhXpbfZLZyEFvP,Quase Algo - Ao Vivo Em Nova Iorque / 2022,25,28,10,Henrique & Juliano
+34,spotify:track:0redQHBfejmPUhonR5ppGC,Duas Três,12,36,42,Guilherme & Benuto
+35,spotify:track:4pWsXhLUdtBKlw9npIXZAl,Halls na Língua,2,31,27,Kadu Martins
+36,spotify:track:0QcKkN8b4iVkmVsbaze8OS,Devia Ser Proibido - Ao Vivo Em Brasília,32,32,15,Henrique & Juliano
+37,spotify:track:7GScY8oE12cqTiNBzVQpUB,Mala dos Porta-Mala - Ao Vivo,22,39,21,Gusttavo Lima
+38,spotify:track:1kWcd9h9HoeXsKaDVhSOtj,Ela - Ao Vivo,35,35,12,Sorriso Maroto
+39,spotify:track:6rpUGV7bcWW9ro65Bf8uYY,Eu Não Dou Conta - Ao Vivo,30,30,6,Israel & Rodolffo
+40,spotify:track:1GOS5OIo4KywJF7Fw9QR4E,A Gente Se Entrega,40,48,3,NATTAN
+41,spotify:track:3PqU6gHWUaBTtIZi5oxEJ7,Um Mês E Pouco - Ao Vivo,25,40,23,Zé Neto & Cristiano
+42,spotify:track:7G2yGMHlcPPTCDhMrAaMyZ,Tô Voltando - (Boiadeira Internacional),36,37,14,Ana Castela
+43,spotify:track:2uhw2oYbugGJbn10wipNX5,Novidade na Área,3,33,23,Mc Livinho
+44,spotify:track:4KGyltc1ugN2WFcjkSPHwh,Não Vitalício (Nunca Mais) - Ao Vivo,5,42,44,Matheus & Kauan
+45,spotify:track:5HlcsBdjb5TiZeZ3ngWRv0,5 Da Manhã - Ao Vivo,33,44,11,Raí Saia Rodada
+46,spotify:track:5XeFesFbtLpXzIVDNQP22n,I Wanna Be Yours,43,43,41,Arctic Monkeys
+47,spotify:track:4xAGuRRKOgoaZbMGdmTD3N,Oi Balde - Ao Vivo,6,51,42,Zé Neto & Cristiano
+48,spotify:track:1M6rclDhYmqRBMFGNJOFKB,Americana Na Vaquejada,6,47,36,Grandão Vaqueiro
+49,spotify:track:1xjy8WRyYUkayJcyyWQpYe,Fronteira - Ao Vivo,49,96,2,Ana Castela
+50,spotify:track:2LTlykcdu0gwb7zcKneo2a,Melhor Só,9,64,36,KayBlack
+51,spotify:track:23IebZSNZ8VzwUr4rJNGRG,MEIO TERMO - Ao Vivo,21,52,26,Luan Santana
+52,spotify:track:4wjDiZGsZYQqKkXyPcQGF6,Agudo Mágico 4,42,49,6,MC K.K
+53,spotify:track:1BxfuPKGuaTgP7aM0Bbdwr,Cruel Summer,41,45,5,Taylor Swift
+54,spotify:track:5btDKzAsFh975NSWxwBHRc,Coisas Que Eu Sei,14,57,34,Felipe Amorim
+55,spotify:track:7k8YBbVumvWI1ujyjWbvlo,Nunca Mais - Ao Vivo,55,70,6,NATTAN
+56,spotify:track:3rUGC1vUpkDG9CZFHMur1t,greedy,43,46,9,Tate McRae
+57,spotify:track:6Td7nVeAOUz13zhDlUY8jv,CHEIRO NA CAMISETA,57,—,1,Luan Pereira
+58,spotify:track:0UlXvVl6NufrExINO2yVlh,Vinho Branco,54,54,6,Manu
+59,spotify:track:6ELMBm3lZFitAZp03GBBNG,Me Atraiu - Ao Vivo,52,61,41,Gabriela Rocha
+60,spotify:track:4VI4yOAb7fWrFCnuGBIaeG,Carta Aberta,60,—,1,MC Cabelinho
+61,spotify:track:4fgnNikmEUvXze89h3X47m,Morena,56,56,9,NATTAN
+62,spotify:track:4Dvkj6JhhA12EX05fT7y2e,As It Was,12,58,13,Harry Styles
+63,spotify:track:4ldcxPVAtih8alepJTu8Hx,"Faz Completo, Chefe",48,93,4,Mc IG
+64,spotify:track:2PVYuRC4zqT4w5k4gsEDVG,Adeus,64,65,4,Mari Fernandez
+65,spotify:track:6hu4HvpNzrW2RIEEAZC3vD,Segredo,37,53,34,KayBlack
+66,spotify:track:7Iq55toOSSBCEoGuXxQSa1,Vem Quebrando,41,55,7,Mc Danone
+67,spotify:track:3S8M3mZGIc10IdtmNTsrjQ,Eu Não Previ - Ao Vivo em Goiânia,50,50,2,Traia Véia
+68,spotify:track:3ktTWpYdXrYApH54cBo4Ap,Conexões de Máfia (feat. Rich The Kid),3,69,32,Matuê
+69,spotify:track:181TYnNi3wNGrdsCykmI4A,A Dona Aranha,11,60,15,Luísa Sonza
+70,spotify:track:7nFvKgVumc9FcU97zGjjei,Coração de Gelo,5,84,2,WIU
+71,spotify:track:1a5LfJGq0vuCWQ9Mme0Ac7,Deserto (Ao Vivo),61,68,47,Maria Marçal
+72,spotify:track:2QjOHCTQ1Jl3zawyYOpxh6,Sweater Weather,72,73,5,The Neighbourhood
+73,spotify:track:39xOREhViooEYFpmnKTdrl,Engana Dizendo Que Ama,24,71,29,Veigh
+74,spotify:track:4ASA1PZyWGbuc4d9N8OAcF,Eu Gosto Assim - Ao Vivo,1,75,64,Gustavo Mioto
+75,spotify:track:6tGlPVCrjerAAbKJs85m5g,Seu Erro - Ao Vivo Em Nova Iorque / 2022,56,62,5,Henrique & Juliano
+76,spotify:track:2Oy4Xr0jyGML8iDpuEoakC,Par Perfeito,67,67,10,Manu
+77,spotify:track:7r8yMaSOy4XmuhRz7iv1gi,Traumatizei - Ao Vivo Em Brasília,10,—,1,Henrique & Juliano
+78,spotify:track:6PXyRQ9Q0eNlLGsI6GxiYX,Torce o Olho - Ao Vivo,59,59,3,Gusttavo Lima
+79,spotify:track:3vkCueOmm7xQDoJ17W1Pm3,My Love Mine All Mine,79,80,3,Mitski
+80,spotify:track:4M1yAebizJWSBQuhsnQLMQ,Agora É Oi BB (Foi Só Te Esquecer) - Ao Vivo,56,72,7,Matheus Fernandes
+81,spotify:track:0oZrvoCYEbKGCsU7cQqNnw,Imprevisto,38,77,12,Yago Oproprio
+82,spotify:track:54FV2rMVwLusAVnzROB0c1,Mesma História,82,—,1,Orochi
+83,spotify:track:5Htol3nnPzphX76oORiNHb,Golzinho Vermelho - Ao Vivo,83,89,3,Leo Santana
+84,spotify:track:7MXVkk9YMctZqd1Srtv4MB,Starboy,65,83,9,The Weeknd
+85,spotify:track:0EMf4CzvPd1z50iqRbmLfl,Deixa,85,98,2,Maria Marçal
+86,spotify:track:3PLdcrfVesYKyTpS1EXsxO,Diferentão - Ao Vivo,86,95,2,Dilsinho
+87,spotify:track:4dHMuSjpkUcWW3zZehOFj7,Narcisista - Ao Vivo,46,74,19,Maiara & Maraisa
+88,spotify:track:5nnnNbMarkWKkAzZhVG3Bh,Literalmente,88,—,1,Tarcísio do Acordeon
+89,spotify:track:5g7sDjBhZ4I3gcFIpkrLuI,Locked out of Heaven,37,79,3,Bruno Mars
+90,spotify:track:7CyPwkp0oE8Ro9Dd5CUDjW,"One Of The Girls (with JENNIE, Lily Rose Depp)",90,—,1,The Weeknd
+91,spotify:track:6bTdZ7xfKp3NqqADJ8HLyj,Vampiro,5,91,6,Matuê
+92,spotify:track:7vCtJ5u7dFM4tAWtgFf4l8,Anestesiado - Ao Vivo,92,—,1,Murilo Huff
+93,spotify:track:7MnT7msJZg3XBAS0OTfGrB,Tempo Perdido,78,78,9,Legião Urbana
+94,spotify:track:62W2f0QOg20ufNjJQHqnkq,Fernando de Noronha,45,88,9,Mc IG
+95,spotify:track:2exu569k07hUulN9CoPnMH,Campo De Morango,9,76,16,Luísa Sonza
+96,spotify:track:4bxAq0zgWQKMaQJ7HLJJxk,Ombrim (ai que delicia o verão) (feat. Mts No Beat),40,86,12,Marina Sena
+97,spotify:track:1Z3QqD45wKKN6fUKBXSvcZ,Pirulito Vermelho,46,66,16,Diego & Victor Hugo
+98,spotify:track:3aWrw4JOomNFr334vCOMdx,Quem Perde É Quem Trai,35,81,11,Manu
+99,spotify:track:4uLzGOlqSanpNS3htaUViY,Pátio do Posto - Ao Vivo,30,—,1,Zé Neto & Cristiano
+100,spotify:track:0oB3IBEhbmgTrL7mV0VnFq,Novinha do Onlyfans (Tchan Ran Tchan Tchan),1,92,58,Kadu Martins

@@ -1,0 +1,6 @@
+genre: brazil
+model_type: RandomForestClassifier
+features: ['bpm', 'energy', 'danceability', 'loudness', 'duration_ms']
+trained_at: 20260108_171453
+dataset_size: 1000
+test_size: 200

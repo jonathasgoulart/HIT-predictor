@@ -1,0 +1,6 @@
+genre: sertanejo
+model_type: RandomForestClassifier
+features: ['bpm', 'energy', 'danceability', 'valence', 'acousticness', 'instrumentalness', 'liveness', 'speechiness', 'loudness']
+trained_at: 20260108_183039
+dataset_size: 1000
+test_size: 200

@@ -1,0 +1,6 @@
+genre: rnb_brasil
+model_type: RandomForestClassifier
+features: ['bpm', 'energy', 'danceability', 'valence', 'acousticness', 'instrumentalness', 'liveness', 'speechiness', 'loudness', 'duration_ms']
+trained_at: 20260107_120132
+dataset_size: 104
+test_size: 21

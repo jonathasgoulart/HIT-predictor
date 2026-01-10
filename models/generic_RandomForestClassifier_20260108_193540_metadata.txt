@@ -1,0 +1,6 @@
+genre: None
+model_type: RandomForestClassifier
+features: ['bpm', 'energy', 'danceability', 'valence', 'acousticness', 'instrumentalness', 'liveness', 'speechiness', 'loudness']
+trained_at: 20260108_193540
+dataset_size: 28
+test_size: 9

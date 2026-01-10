@@ -1,24 +1,36 @@
 // Configuração da API
 const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-const API_URL = isLocal ? 'http://localhost:5000/api' : '/api';
-
+const API_URL = '/api';
 
 // Estado da aplicação
-let selectedFile = null;
+let selectedFiles = []; // Lista de arquivos File
+let availableGenres = []; // Lista de gêneros da API
+let analysisResults = []; // [{ filename: string, features: {}, predictions: { genreId: predictionObj } }]
 
 // Elementos DOM
 const dropZone = document.getElementById('dropZone');
 const fileInput = document.getElementById('fileInput');
-const selectedFileDiv = document.getElementById('selectedFile');
-const fileName = document.getElementById('fileName');
-const fileSize = document.getElementById('fileSize');
-const removeFileBtn = document.getElementById('removeFile');
+const selectedFilesContainer = document.getElementById('selectedFilesContainer');
+const filesList = document.getElementById('filesList');
+const genresGrid = document.getElementById('genresGrid');
 const analyzeBtn = document.getElementById('analyzeBtn');
+
 const uploadSection = document.getElementById('uploadSection');
 const loadingSection = document.getElementById('loadingSection');
+const progressFill = document.getElementById('progressFill');
+const loadingText = document.getElementById('loadingText');
+
+const batchResultsSection = document.getElementById('batchResultsSection');
+const comparisonTable = document.getElementById('comparisonTable');
+const tableHeader = document.getElementById('tableHeader');
+const tableBody = document.getElementById('tableBody');
+
 const resultsSection = document.getElementById('resultsSection');
+const backToBatchBtn = document.getElementById('backToBatchBtn');
+const individualTitle = document.getElementById('individualTitle');
+const newBatchBtn = document.getElementById('newBatchBtn');
 const newAnalysisBtn = document.getElementById('newAnalysisBtn');
-const genreSelect = document.getElementById('genreSelect');
+const suggestGenresBtn = document.getElementById('suggestGenresBtn');
 
 // Event Listeners
 dropZone.addEventListener('click', () => fileInput.click());
@@ -26,220 +38,512 @@ dropZone.addEventListener('dragover', handleDragOver);
 dropZone.addEventListener('dragleave', handleDragLeave);
 dropZone.addEventListener('drop', handleDrop);
 fileInput.addEventListener('change', handleFileSelect);
-removeFileBtn.addEventListener('click', clearFile);
-analyzeBtn.addEventListener('click', analyzeAudio);
+analyzeBtn.addEventListener('click', startBatchAnalysis);
+newBatchBtn.addEventListener('click', resetApp);
 newAnalysisBtn.addEventListener('click', resetApp);
+backToBatchBtn.addEventListener('click', showBatchResults);
+suggestGenresBtn.addEventListener('click', suggestBestGenres);
 
 // Drag and Drop Handlers
-function handleDragOver(e) {
-    e.preventDefault();
-    dropZone.classList.add('drag-over');
-}
-
-function handleDragLeave(e) {
-    e.preventDefault();
-    dropZone.classList.remove('drag-over');
-}
-
+function handleDragOver(e) { e.preventDefault(); dropZone.classList.add('drag-over'); }
+function handleDragLeave(e) { e.preventDefault(); dropZone.classList.remove('drag-over'); }
 function handleDrop(e) {
     e.preventDefault();
     dropZone.classList.remove('drag-over');
-
-    const files = e.dataTransfer.files;
-    if (files.length > 0) {
-        handleFile(files[0]);
-    }
+    handleFiles(e.dataTransfer.files);
 }
-
-function handleFileSelect(e) {
-    const files = e.target.files;
-    if (files.length > 0) {
-        handleFile(files[0]);
-    }
-}
+function handleFileSelect(e) { handleFiles(e.target.files); }
 
 // File Handling
-function handleFile(file) {
-    // Validar tipo de arquivo
+function handleFiles(files) {
     const validTypes = ['audio/mpeg', 'audio/wav', 'audio/ogg', 'audio/flac', 'audio/x-m4a'];
     const validExtensions = ['.mp3', '.wav', '.ogg', '.flac', '.m4a'];
 
-    const fileExtension = '.' + file.name.split('.').pop().toLowerCase();
+    const newFiles = Array.from(files).filter(file => {
+        const ext = '.' + file.name.split('.').pop().toLowerCase();
+        return validTypes.includes(file.type) || validExtensions.includes(ext);
+    });
 
-    if (!validTypes.includes(file.type) && !validExtensions.includes(fileExtension)) {
-        alert('Formato de arquivo não suportado. Use MP3, WAV, OGG, FLAC ou M4A.');
+    if (newFiles.length === 0 && files.length > 0) {
+        alert('Nenhum formato de áudio válido selecionado.');
         return;
     }
 
-    // Validar tamanho (50MB)
-    const maxSize = 50 * 1024 * 1024;
-    if (file.size > maxSize) {
-        alert('Arquivo muito grande. O tamanho máximo é 50MB.');
+    // Limita a 10 músicas
+    selectedFiles = [...selectedFiles, ...newFiles].slice(0, 10);
+    renderFilesList();
+    validateInputs();
+}
+
+function renderFilesList() {
+    filesList.innerHTML = '';
+    selectedFiles.forEach((file, index) => {
+        const item = document.createElement('div');
+        item.className = 'file-item';
+        item.innerHTML = `
+            <div class="file-item-info">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="opacity: 0.6"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+                <span class="file-item-name" title="${file.name}">${file.name}</span>
+            </div>
+            <button class="btn-remove" onclick="removeFile(${index})">✕</button>
+        `;
+        filesList.appendChild(item);
+    });
+
+    selectedFilesContainer.style.display = selectedFiles.length > 0 ? 'block' : 'none';
+}
+
+window.removeFile = function (index) {
+    selectedFiles.splice(index, 1);
+    renderFilesList();
+    validateInputs();
+};
+
+function validateInputs() {
+    const selectedGenres = getSelectedGenres();
+    analyzeBtn.disabled = selectedFiles.length === 0 || selectedGenres.length === 0;
+    suggestGenresBtn.disabled = selectedFiles.length === 0;
+}
+
+function getSelectedGenres() {
+    const checkboxes = genresGrid.querySelectorAll('input:checked');
+    return Array.from(checkboxes).map(cb => cb.value);
+}
+
+async function suggestBestGenres() {
+    if (selectedFiles.length === 0) {
+        alert('Por favor, selecione uma música primeiro.');
         return;
     }
 
-    selectedFile = file;
-    displaySelectedFile(file);
-}
-
-function displaySelectedFile(file) {
-    fileName.textContent = file.name;
-    fileSize.textContent = formatFileSize(file.size);
-
-    selectedFileDiv.style.display = 'flex';
-    dropZone.style.display = 'none';
-    analyzeBtn.disabled = false;
-}
-
-function clearFile() {
-    selectedFile = null;
-    fileInput.value = '';
-    selectedFileDiv.style.display = 'none';
-    dropZone.style.display = 'block';
-    analyzeBtn.disabled = true;
-}
-
-function formatFileSize(bytes) {
-    if (bytes === 0) return '0 Bytes';
-    const k = 1024;
-    const sizes = ['Bytes', 'KB', 'MB', 'GB'];
-    const i = Math.floor(Math.log(bytes) / Math.log(k));
-    return Math.round(bytes / Math.pow(k, i) * 100) / 100 + ' ' + sizes[i];
-}
-
-// Analysis
-async function analyzeAudio() {
-    if (!selectedFile) return;
-
-    // Mostrar loading
-    uploadSection.style.display = 'none';
-    loadingSection.style.display = 'block';
-    resultsSection.style.display = 'none';
+    suggestGenresBtn.disabled = true;
+    suggestGenresBtn.textContent = '⏳ Analisando...';
 
     try {
-        // Preparar FormData
-        const formData = new FormData();
-        formData.append('audio', selectedFile);
-        formData.append('genre', genreSelect.value);
+        const allGenreScores = {}; // Acumula scores de todas as músicas
 
-        // Enviar para API
-        const response = await fetch(`${API_URL}/analyze`, {
-            method: 'POST',
-            body: formData
-        });
+        // Analisa cada música
+        for (let i = 0; i < selectedFiles.length; i++) {
+            const file = selectedFiles[i];
 
-        if (!response.ok) {
-            const error = await response.json();
-            throw new Error(error.error || 'Erro ao analisar áudio');
+            // Atualiza progresso
+            suggestGenresBtn.textContent = `⏳ ${i + 1}/${selectedFiles.length}...`;
+
+            // Extrai features da música
+            const formData = new FormData();
+            formData.append('audio', file);
+            formData.append('genres[]', 'mpb_rock'); // Dummy para extrair features
+
+            const response = await fetch(`${API_URL}/analyze`, {
+                method: 'POST',
+                body: formData
+            });
+
+            if (!response.ok) {
+                console.warn(`Erro ao analisar ${file.name}, pulando...`);
+                continue;
+            }
+
+            const data = await response.json();
+            const features = data.features;
+
+            // Calcula scores para esta música
+            const genreScores = calculateGenreScores(features);
+
+            // Acumula scores
+            for (const [genre, score] of Object.entries(genreScores)) {
+                if (!allGenreScores[genre]) allGenreScores[genre] = 0;
+                allGenreScores[genre] += score;
+            }
         }
 
-        const data = await response.json();
+        // Calcula média dos scores
+        const avgScores = {};
+        for (const [genre, totalScore] of Object.entries(allGenreScores)) {
+            avgScores[genre] = totalScore / selectedFiles.length;
+        }
 
-        // Exibir resultados
-        displayResults(data);
+        // Ordena por score médio e pega os top 2
+        const sortedGenres = Object.entries(avgScores)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 2)
+            .map(([id]) => id);
+
+        // Desmarca todos
+        genresGrid.querySelectorAll('input').forEach(cb => cb.checked = false);
+
+        // Marca os top 2
+        sortedGenres.forEach(genreId => {
+            const checkbox = document.getElementById(`genre_${genreId}`);
+            if (checkbox) checkbox.checked = true;
+        });
+
+        validateInputs();
+
+        // Mostra mensagem de sucesso
+        const genreNames = sortedGenres.map(id => {
+            const genre = availableGenres.find(g => g.id === id);
+            return genre ? genre.name : id;
+        }).join(' e ');
+
+        const songText = selectedFiles.length === 1 ? '1 música' : `${selectedFiles.length} músicas`;
+        suggestGenresBtn.textContent = `✅ ${genreNames}`;
+        setTimeout(() => {
+            suggestGenresBtn.textContent = '✨ Sugerir Gêneros';
+            suggestGenresBtn.disabled = false;
+        }, 3000);
 
     } catch (error) {
-        console.error('Erro:', error);
-        alert(`Erro ao analisar música: ${error.message}\n\nVerifique se o servidor backend está rodando em ${API_URL}`);
-        resetApp();
+        console.error('Erro ao sugerir gêneros:', error);
+        alert('Erro ao analisar músicas. Tente novamente.');
+        suggestGenresBtn.textContent = '✨ Sugerir Gêneros';
+        suggestGenresBtn.disabled = false;
     }
+}
+
+function calculateGenreScores(features) {
+    const genreScores = {};
+
+    // R&B Trap: BPM baixo + ALTA speechiness + energia alta + NÃO acústico
+    genreScores['rnb_trap'] = 0;
+    if (features.bpm < 95) genreScores['rnb_trap'] += 30;
+    if (features.speechiness > 0.2) genreScores['rnb_trap'] += 35; // Aumentado threshold
+    if (features.energy > 0.7) genreScores['rnb_trap'] += 20;
+    if (features.danceability > 0.6) genreScores['rnb_trap'] += 15;
+    // PENALIDADES para evitar falsos positivos
+    if (features.acousticness > 0.5) genreScores['rnb_trap'] -= 40; // Trap não é acústico
+    if (features.speechiness < 0.15) genreScores['rnb_trap'] -= 30; // Trap TEM que ter rap
+
+    // R&B Pop: BPM médio + baixa speechiness + valence positiva
+    genreScores['rnb_pop'] = 0;
+    if (features.bpm >= 95 && features.bpm <= 120) genreScores['rnb_pop'] += 25;
+    if (features.speechiness < 0.15) genreScores['rnb_pop'] += 20;
+    if (features.valence > 0.5) genreScores['rnb_pop'] += 25;
+    if (features.danceability > 0.6) genreScores['rnb_pop'] += 15;
+    if (features.acousticness > 0.4) genreScores['rnb_pop'] += 10; // R&B Pop pode ser acústico
+
+    // MPB Rock: Alta energia + loudness alto
+    genreScores['mpb_rock'] = 0;
+    if (features.energy > 0.6) genreScores['mpb_rock'] += 30;
+    if (features.loudness > -7) genreScores['mpb_rock'] += 25;
+    if (features.bpm > 110) genreScores['mpb_rock'] += 20;
+    if (features.acousticness < 0.4) genreScores['mpb_rock'] += 15;
+
+    // MPB Indie: Acústico + valence médio + speechiness BAIXA
+    genreScores['mpb_indie'] = 0;
+    if (features.acousticness > 0.5) genreScores['mpb_indie'] += 35;
+    if (features.valence >= 0.4 && features.valence <= 0.7) genreScores['mpb_indie'] += 25;
+    if (features.bpm >= 95 && features.bpm <= 120) genreScores['mpb_indie'] += 20;
+    if (features.energy >= 0.4 && features.energy <= 0.65) genreScores['mpb_indie'] += 15;
+    if (features.speechiness < 0.15) genreScores['mpb_indie'] += 15; // Indie tem pouca fala
+
+    // Sertanejo: BPM alto + danceability alta
+    genreScores['sertanejo'] = 0;
+    if (features.bpm > 120) genreScores['sertanejo'] += 30;
+    if (features.danceability > 0.7) genreScores['sertanejo'] += 25;
+    if (features.valence > 0.6) genreScores['sertanejo'] += 20;
+    if (features.acousticness > 0.4) genreScores['sertanejo'] += 15;
+
+    // Pagode: BPM médio-alto + danceability alta + acústico
+    genreScores['pagode'] = 0;
+    if (features.bpm >= 100 && features.bpm <= 130) genreScores['pagode'] += 25;
+    if (features.danceability > 0.7) genreScores['pagode'] += 30;
+    if (features.acousticness > 0.5) genreScores['pagode'] += 20;
+    if (features.valence > 0.6) genreScores['pagode'] += 15;
+
+    // Samba: Similar ao pagode mas mais acústico + speechiness baixa
+    genreScores['samba'] = 0;
+    if (features.bpm >= 90 && features.bpm <= 120) genreScores['samba'] += 30;
+    if (features.acousticness > 0.6) genreScores['samba'] += 35;
+    if (features.danceability > 0.6) genreScores['samba'] += 20;
+    if (features.valence > 0.5) genreScores['samba'] += 15;
+    if (features.speechiness < 0.15) genreScores['samba'] += 10; // Samba tem pouca fala
+
+    // Forró: BPM específico + danceability
+    genreScores['forro'] = 0;
+    if (features.bpm >= 110 && features.bpm <= 140) genreScores['forro'] += 30;
+    if (features.danceability > 0.7) genreScores['forro'] += 25;
+    if (features.acousticness > 0.4) genreScores['forro'] += 20;
+
+    // Pop Urban: Energia + danceability + produção moderna
+    genreScores['pop_urban_brasil'] = 0;
+    if (features.energy > 0.6) genreScores['pop_urban_brasil'] += 25;
+    if (features.danceability > 0.65) genreScores['pop_urban_brasil'] += 25;
+    if (features.loudness > -6) genreScores['pop_urban_brasil'] += 20;
+    if (features.valence > 0.5) genreScores['pop_urban_brasil'] += 15;
+
+    // Garante que scores negativos viram 0
+    for (const genre in genreScores) {
+        genreScores[genre] = Math.max(0, genreScores[genre]);
+    }
+
+    return genreScores;
+}
+
+// Batch Analysis
+async function startBatchAnalysis() {
+    const genreIds = getSelectedGenres();
+    if (selectedFiles.length === 0 || genreIds.length === 0) return;
+
+    uploadSection.style.display = 'none';
+    loadingSection.style.display = 'block';
+    analysisResults = [];
+
+    try {
+        for (let i = 0; i < selectedFiles.length; i++) {
+            const file = selectedFiles[i];
+
+            // Log para debug
+            console.log(`>>> Iniciando análise de: ${file.name}`);
+
+            // Atualiza progresso (mínimo 5% no início para dar feedback)
+            const baseProgress = (i / selectedFiles.length) * 100;
+            progressFill.style.width = `${Math.max(5, baseProgress)}%`;
+            loadingText.textContent = `Analisando: ${file.name} (${i + 1}/${selectedFiles.length})`;
+
+            const formData = new FormData();
+            formData.append('audio', file);
+            genreIds.forEach(id => formData.append('genres[]', id));
+
+            try {
+                const response = await fetch(`${API_URL}/analyze`, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (!response.ok) {
+                    const errBody = await response.json();
+                    throw new Error(errBody.error || `Erro HTTP ${response.status}`);
+                }
+
+                const data = await response.json();
+                console.log(`<<< Sucesso: ${file.name}`, data);
+
+                analysisResults.push({
+                    originalName: file.name,
+                    features: data.features,
+                    predictions: data.predictions
+                });
+            } catch (error) {
+                console.error(`Falha no arquivo ${file.name}:`, error);
+                alert(`Erro ao analisar "${file.name}":\n${error.message}`);
+                // Continua para o próximo arquivo mesmo com erro
+            }
+        }
+    } catch (criticalError) {
+        console.error("Erro crítico no lote:", criticalError);
+        alert("Ocorreu um erro inesperado que interrompeu o processamento.");
+    } finally {
+        progressFill.style.width = '100%';
+        loadingSection.style.display = 'none';
+
+        if (analysisResults.length > 0) {
+            showBatchResults();
+        } else {
+            uploadSection.style.display = 'block';
+            resetApp();
+        }
+    }
+}
+
+function showBatchResults() {
+    loadingSection.style.display = 'none';
+    resultsSection.style.display = 'none';
+    batchResultsSection.style.display = 'block';
+
+    renderComparisonTable();
+}
+
+function renderComparisonTable() {
+    const selectedGenres = getSelectedGenres();
+
+    // Header - Agora com coluna de Estilo Ideal
+    tableHeader.innerHTML = '<th>Arquivo</th>';
+    selectedGenres.forEach(genreId => {
+        const genre = availableGenres.find(g => g.id === genreId);
+        const th = document.createElement('th');
+        th.textContent = genre ? genre.name : genreId;
+        tableHeader.appendChild(th);
+    });
+
+    const thBest = document.createElement('th');
+    thBest.innerHTML = 'Match IA <small style="display:block; font-size: 9px; opacity: 0.5;">(Estilo Ideal)</small>';
+    tableHeader.appendChild(thBest);
+
+    // Body
+    tableBody.innerHTML = '';
+    analysisResults.forEach((result, songIndex) => {
+        const tr = document.createElement('tr');
+
+        // Nome da música - Mais elegante
+        const tdName = document.createElement('td');
+        tdName.innerHTML = `<div style="max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 500;">${result.originalName}</div>`;
+        tr.appendChild(tdName);
+
+        // Scores por gênero e cálculo do melhor
+        let maxScore = -1;
+        let bestGenreId = null;
+
+        selectedGenres.forEach(genreId => {
+            const td = document.createElement('td');
+            const prediction = result.predictions[genreId];
+            if (prediction) {
+                const score = prediction.hit_score;
+
+                if (score > maxScore) {
+                    maxScore = score;
+                    bestGenreId = genreId;
+                }
+
+                td.className = 'score-cell';
+                td.innerHTML = `<span class="score-badge" style="background: ${getScoreColor(score)}11; color: ${getScoreColor(score)}">${score}</span>`;
+                td.onclick = () => showIndividualDetail(songIndex, genreId);
+            } else {
+                td.textContent = '-';
+            }
+            tr.appendChild(td);
+        });
+
+        // Célula do Melhor Match
+        const tdBest = document.createElement('td');
+        if (bestGenreId) {
+            const genreName = getGenreName(bestGenreId);
+            tdBest.innerHTML = `
+                <div class="best-match-pill" onclick="showIndividualDetail(${songIndex}, '${bestGenreId}')">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    ${genreName}
+                </div>
+            `;
+        } else {
+            tdBest.textContent = '-';
+        }
+        tr.appendChild(tdBest);
+
+        tableBody.appendChild(tr);
+    });
+}
+
+function getScoreColor(score) {
+    if (score >= 80) return '#10b981';
+    if (score >= 60) return '#3b82f6';
+    if (score >= 40) return '#f59e0b';
+    return '#ef4444';
+}
+
+function showIndividualDetail(songIndex, genreId) {
+    const result = analysisResults[songIndex];
+    const prediction = result.predictions[genreId];
+
+    batchResultsSection.style.display = 'none';
+    resultsSection.style.display = 'block';
+    backToBatchBtn.style.display = 'block';
+
+    individualTitle.textContent = `Análise: ${result.originalName}`;
+    document.getElementById('currentAnalysisSongName').textContent = `Estilo: ${getGenreName(genreId)}`;
+
+    displayResults({
+        features: result.features,
+        prediction: prediction
+    });
+}
+
+function getGenreName(id) {
+    const g = availableGenres.find(x => x.id === id);
+    return g ? g.name : id;
 }
 
 function displayResults(data) {
     const { features, prediction } = data;
 
-    // Esconder loading, mostrar resultados
-    loadingSection.style.display = 'none';
-    resultsSection.style.display = 'block';
+    console.log('[DEBUG] displayResults chamado');
+    console.log('[DEBUG] prediction:', prediction);
+    console.log('[DEBUG] hit_averages:', prediction.hit_averages);
+    console.log('[DEBUG] createThermometerChart existe?', typeof createThermometerChart);
 
-    // Animar score
-    animateScore(prediction.hit_score);
+    document.getElementById('scoreDescription').textContent = prediction.hit_description || '';
 
-    // Criar gauge chart
-    createScoreGauge(prediction.hit_score);
+    // Chama funções do visualizations.js e locais
+    if (typeof animateScore === 'function') animateScore(prediction.hit_score);
 
-    // Criar radar chart
-    createRadarChart(prediction.individual_scores);
+    // SEMPRE usa termômetro E radar
+    if (typeof createRadarChart === 'function') {
+        createRadarChart(features, prediction.hit_averages);
+    }
 
-    // Exibir features
+    if (typeof createThermometerChart === 'function') {
+        createThermometerChart(features, prediction.hit_averages);
+    }
+
     displayFeatures(features);
-
-    // Exibir recomendações
     displayRecommendations(prediction.recommendations);
-
-    // Scroll suave para resultados
-    resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-function animateScore(targetScore) {
-    const scoreElement = document.getElementById('scoreNumber');
-    const descriptionElement = document.getElementById('scoreDescription');
-
-    let currentScore = 0;
-    const duration = 2000; // 2 segundos
-    const increment = targetScore / (duration / 16); // 60 FPS
-
-    const animation = setInterval(() => {
-        currentScore += increment;
-        if (currentScore >= targetScore) {
-            currentScore = targetScore;
-            clearInterval(animation);
+function animateScore(target) {
+    const el = document.getElementById('scoreNumber');
+    let current = 0;
+    const step = target / 30;
+    const interval = setInterval(() => {
+        current += step;
+        if (current >= target) {
+            el.textContent = Math.round(target);
+            clearInterval(interval);
+        } else {
+            el.textContent = Math.round(current);
         }
-        scoreElement.textContent = Math.round(currentScore);
-    }, 16);
-
-    // Descrição baseada no score
-    if (targetScore >= 80) {
-        descriptionElement.textContent = '🔥 Excelente! Grande potencial de hit!';
-        descriptionElement.style.color = '#10b981';
-    } else if (targetScore >= 60) {
-        descriptionElement.textContent = '✨ Muito bom! Com alguns ajustes pode ser um hit.';
-        descriptionElement.style.color = '#3b82f6';
-    } else if (targetScore >= 40) {
-        descriptionElement.textContent = '💡 Bom começo. Veja as recomendações para melhorar.';
-        descriptionElement.style.color = '#f59e0b';
-    } else {
-        descriptionElement.textContent = '🎯 Precisa de trabalho. Confira as sugestões abaixo.';
-        descriptionElement.style.color = '#ef4444';
-    }
+    }, 20);
 }
 
 function displayFeatures(features) {
     const grid = document.getElementById('featuresGrid');
     grid.innerHTML = '';
 
-    const featureLabels = {
-        'bpm': { label: 'BPM', format: (v) => Math.round(v) },
-        'energy': { label: 'Energia', format: (v) => (v * 100).toFixed(1) + '%' },
-        'danceability': { label: 'Dançabilidade', format: (v) => (v * 100).toFixed(1) + '%' },
-        'loudness': { label: 'Loudness', format: (v) => v.toFixed(1) + ' dB' },
-        'duration': { label: 'Duração', format: (v) => formatDuration(v) },
-        'key': { label: 'Tonalidade', format: (v) => v },
-        'brightness': { label: 'Brilho', format: (v) => Math.round(v) + ' Hz' }
+    const labels = {
+        'bpm': 'BPM (Tempo)',
+        'energy': 'Energia',
+        'danceability': 'Dançabilidade',
+        'valence': 'Positividade',
+        'acousticness': 'Acusticidade',
+        'instrumentalness': 'Instrumentalidade',
+        'liveness': 'Presença de Público',
+        'speechiness': 'Fala/Rap',
+        'loudness': 'Loudness (Volume)',
+        'key': 'Tonalidade'
     };
 
-    for (const [key, config] of Object.entries(featureLabels)) {
-        if (features[key] !== undefined) {
-            const item = document.createElement('div');
-            item.className = 'feature-item';
-            item.innerHTML = `
-                <div class="feature-label">${config.label}</div>
-                <div class="feature-value">${config.format(features[key])}</div>
-            `;
-            grid.appendChild(item);
-        }
-    }
-}
+    for (const [key, val] of Object.entries(features)) {
+        if (!labels[key]) continue;
 
-function formatDuration(seconds) {
-    const mins = Math.floor(seconds / 60);
-    const secs = Math.floor(seconds % 60);
-    return `${mins}:${secs.toString().padStart(2, '0')}`;
+        const item = document.createElement('div');
+        item.className = 'feature-item';
+
+        let displayVal = val;
+        if (typeof val === 'number') {
+            if (key === 'loudness') {
+                displayVal = val.toFixed(1) + ' dB';
+            } else if (val >= 0 && val <= 1 && key !== 'bpm' && key !== 'loudness') {
+                // Converte features 0-1 para porcentagem (energy, danceability, valence, acousticness, instrumentalness, liveness, speechiness)
+                displayVal = (val * 100).toFixed(0) + '%';
+            } else {
+                displayVal = val.toFixed(1);
+            }
+        }
+
+        item.innerHTML = `
+            <div class="feature-label">${labels[key]}</div>
+            <div class="feature-value">${displayVal}</div>
+        `;
+        grid.appendChild(item);
+    }
 }
 
 function displayRecommendations(recommendations) {
     const list = document.getElementById('recommendationsList');
     list.innerHTML = '';
+
+    if (!recommendations || recommendations.length === 0) {
+        list.innerHTML = '<p>Nenhuma recomendação específica para este estilo.</p>';
+        return;
+    }
 
     recommendations.forEach(rec => {
         const item = document.createElement('div');
@@ -256,36 +560,38 @@ function displayRecommendations(recommendations) {
 }
 
 function resetApp() {
-    clearFile();
+    selectedFiles = [];
+    analysisResults = [];
+    renderFilesList();
     uploadSection.style.display = 'block';
     loadingSection.style.display = 'none';
+    batchResultsSection.style.display = 'none';
     resultsSection.style.display = 'none';
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    validateInputs();
 }
 
-// Verificar e Carregar Gêneros ao iniciar
+// Inicialização
 window.addEventListener('load', async () => {
     try {
-        // Health check
-        const healthResponse = await fetch(`${API_URL}/health`);
-        if (healthResponse.ok) {
-            console.log('✅ API conectada com sucesso');
-        }
-
-        // Carregar gêneros
         const genresResponse = await fetch(`${API_URL}/genres`);
         const genresData = await genresResponse.json();
+        availableGenres = genresData.genres;
 
-        if (genresData.genres) {
-            genreSelect.innerHTML = '';
-            genresData.genres.forEach(genre => {
-                const option = document.createElement('option');
-                option.value = genre.id;
-                option.textContent = genre.name + (genre.has_ml_model ? ' (IA)' : '');
-                genreSelect.appendChild(option);
+        if (availableGenres) {
+            genresGrid.innerHTML = '';
+            availableGenres.forEach(genre => {
+                const item = document.createElement('div');
+                item.className = 'genre-checkbox-item';
+                item.innerHTML = `
+                    <input type="checkbox" id="genre_${genre.id}" value="${genre.id}" onchange="validateInputs()">
+                    <label for="genre_${genre.id}" class="genre-checkbox-label">
+                        ${genre.name}
+                    </label>
+                `;
+                genresGrid.appendChild(item);
             });
         }
     } catch (error) {
-        console.warn('⚠️ Erro ao conectar com API:', error);
+        console.warn('Erro ao carregar gêneros:', error);
     }
 });

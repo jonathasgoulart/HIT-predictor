@@ -1,7 +1,7 @@
 genre,accuracy,cv_mean,threshold,model
-brazil,0.61,0.5924736935972891,45.0,brazil_RandomForestClassifier_20260107_125022.pkl
-forro,0.57,0.5049749842771724,41.0,forro_RandomForestClassifier_20260107_125023.pkl
-mpb,0.51,0.48002496878901374,42.0,mpb_RandomForestClassifier_20260107_125024.pkl
-pagode,0.54,0.5225376174518694,45.0,pagode_RandomForestClassifier_20260107_125025.pkl
-samba,0.585,0.5562971098157378,39.0,samba_RandomForestClassifier_20260107_125026.pkl
-sertanejo,0.565,0.5762721410267241,47.0,sertanejo_RandomForestClassifier_20260107_125027.pkl
+brazil,0.59,0.603761275848798,45.0,brazil_RandomForestClassifier_20260108_183034.pkl
+forro,0.565,0.5512282579106943,41.0,forro_RandomForestClassifier_20260108_183035.pkl
+mpb,0.555,0.5037922521659955,42.0,mpb_RandomForestClassifier_20260108_183036.pkl
+pagode,0.525,0.5400580101940243,45.0,pagode_RandomForestClassifier_20260108_183037.pkl
+samba,0.58,0.5387673303107957,39.0,samba_RandomForestClassifier_20260108_183038.pkl
+sertanejo,0.58,0.5637877465198576,47.0,sertanejo_RandomForestClassifier_20260108_183039.pkl

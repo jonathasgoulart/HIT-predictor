@@ -1,0 +1,6 @@
+genre: mpb
+model_type: RandomForestClassifier
+features: ['bpm', 'energy', 'danceability', 'valence', 'acousticness', 'instrumentalness', 'liveness', 'speechiness', 'loudness', 'duration_ms']
+trained_at: 20260107_122627
+dataset_size: 1082
+test_size: 217

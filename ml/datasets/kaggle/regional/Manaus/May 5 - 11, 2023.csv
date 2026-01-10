@@ -1,0 +1,101 @@
+rank,uri,track_name,peak,prev,streak,artist_names
+1,spotify:track:2K9kZpwD2CzTa6iiSYYOoO,Leão,1,1,13,Marília Mendonça
+2,spotify:track:3ktTWpYdXrYApH54cBo4Ap,Conexões de Máfia (feat. Rich The Kid),2,15,2,Matuê
+3,spotify:track:51pxwIxDVCbFHW8oyJFQXD,Erro Gostoso - Ao Vivo,2,2,13,Simone Mendes
+4,spotify:track:4uqJelb9THHmJ3OCohg4ZJ,Nosso Quadro,2,3,13,AgroPlay
+5,spotify:track:3PH1nUysW7ybo3Yu8sqlPN,Seu Brilho Sumiu - Ao Vivo,4,4,9,Israel & Rodolffo
+6,spotify:track:2BlFIe0712LBUtTHxbqjme,Love Gostosinho - Ao Vivo,4,5,13,NATTAN
+7,spotify:track:2LTlykcdu0gwb7zcKneo2a,Melhor Só,6,6,6,KayBlack
+8,spotify:track:7nFvKgVumc9FcU97zGjjei,Coração de Gelo,3,7,13,WIU
+9,spotify:track:3mzbab4H0iZYkHggSEj0UX,Oi Balde - Ao Vivo,8,8,11,Zé Neto & Cristiano
+10,spotify:track:4sqpSDnTrbS8v7RMNCUyqS,Não Vitalício (Nunca Mais) - Ao Vivo,9,9,13,Matheus & Kauan
+11,spotify:track:1M6rclDhYmqRBMFGNJOFKB,Americana Na Vaquejada,11,12,5,Grandão Vaqueiro
+12,spotify:track:7CJJ7JC3kj9XdweWTvfVhX,Vacilão,2,10,8,Zé Felipe
+13,spotify:track:0JIYoXtJfORxI6gRpHv6ZW,Traumatizei - Ao Vivo Em Brasília,7,11,13,Henrique & Juliano
+14,spotify:track:7Ht57bh2FwiQLwRH9zqESG,085 - Ao Vivo,12,14,11,MC Rogerinho
+15,spotify:track:0SCMVUZ21uYYB8cc0ScfbV,Bombonzinho - Ao Vivo,7,13,13,Israel & Rodolffo
+16,spotify:track:22sAwsBH0NoNJXnrBenQuO,Sem Aliança no Dedo,4,17,13,MC Xenon
+17,spotify:track:4ASA1PZyWGbuc4d9N8OAcF,Eu Gosto Assim - Ao Vivo,6,16,13,Gustavo Mioto
+18,spotify:track:5TtTijiNYtFc6ktQARjY30,Preferida,18,24,5,KayBlack
+19,spotify:track:5WsM6qhZzRSD3oKbtorxzD,Aquecimento Senta Senta Suave,8,18,8,MC Kevin o Chris
+20,spotify:track:156LKAN2oh16qflL5oz4tO,Os Bico Tão Se Perguntando (Let’s Go 3),13,19,4,MC PH
+21,spotify:track:0redQHBfejmPUhonR5ppGC,Duas Três,20,20,12,Guilherme & Benuto
+22,spotify:track:2orGm2E68ODFYOURjaES62,Felina,12,22,13,WIU
+23,spotify:track:52EYWdjiulHaehpexuowyh,FOGO E GASOLINA,14,32,13,MC Cabelinho
+24,spotify:track:0dcHD9QhnWRA41zoLnC83X,X1,19,30,13,MC Cabelinho
+25,spotify:track:4f0aDk7HX37SfzerfznYlr,Lapada Dela - Ao Vivo,23,23,8,Grupo Menos É Mais
+26,spotify:track:3khLpwuyIjEOw8vfJ1oUIT,Papin,26,36,2,MC Kevin o Chris
+27,spotify:track:6hu4HvpNzrW2RIEEAZC3vD,Segredo,27,42,5,KayBlack
+28,spotify:track:1jHgfC8T5KxUyC5Ldw6lk9,Zona De Perigo,1,25,13,Leo Santana
+29,spotify:track:5qOZbLAjBqInXwAECb9NRS,Clickbait,29,76,2,Veigh
+30,spotify:track:3YQvZNmRc2y1hgdvustkce,MINHA CURA,26,43,13,MC Cabelinho
+31,spotify:track:5geU4byUA1hnQofQPOsPDS,Sereia,20,40,13,Orochi
+32,spotify:track:5btDKzAsFh975NSWxwBHRc,Coisas Que Eu Sei,21,21,3,Felipe Amorim
+33,spotify:track:51FFbyL0PjkYtjXJQP0JoP,Saudade da Minha Vida - Ao Vivo,18,27,13,Gusttavo Lima
+34,spotify:track:5aqwwgL4XOv2YJYwLiqKOZ,A Culpa É Nossa - Ao Vivo,23,34,13,Maiara & Maraisa
+35,spotify:track:0ZAL7RbP2FsM3rObV60o7T,Namorando Ou Não - Ao Vivo,26,28,8,Clayton & Romário
+36,spotify:track:2kBbHpJTc7MWs8F3XhClBD,Altas Loucurinhas (Uni Duni Tê) - Ao Vivo,20,35,13,Matheus Fernandes
+37,spotify:track:5v8EhStRWlvoY2qbcZR5R2,Mágica - Ao Vivo,30,31,5,Hugo & Guilherme
+38,spotify:track:3o4wcB1Y6xC62eF02n9RSZ,ELA PIROU NA DODGE RAM,33,33,6,Luan Pereira
+39,spotify:track:7aZnuwpivaj4N7XFhhqBiO,Love Absurdo,31,39,13,Mari Fernandez
+40,spotify:track:7CUQQLRMIeSfa4m2uQcRHp,Rancorosa - Ao Vivo Em Brasília,23,29,6,Henrique & Juliano
+41,spotify:track:7qoIhutxU269Zqo9PG5IOj,Poesia Acústica 13,24,50,13,Pineapple StormTv
+42,spotify:track:6ELMBm3lZFitAZp03GBBNG,Me Atraiu - Ao Vivo,30,44,11,Gabriela Rocha
+43,spotify:track:1L7hWEc3tVjvmbw48ShktM,Desejo Imortal (It Must Have Been Love) - Ao Vivo,43,47,4,Gusttavo Lima
+44,spotify:track:1nf1HJdTWXwf9XHQebGlOd,Quando Apaga A Luz - Ao Vivo,30,37,13,Gustavo Mioto
+45,spotify:track:5y7yYXNSsT89A27DQxbmUL,Covardia,27,38,6,Wesley Safadão
+46,spotify:track:0KXdSF0Poa57KOepZ3hKrh,Palhaça - Ao Vivo,38,45,13,Naiara Azevedo
+47,spotify:track:2M4kQD87lKnAS9vFlb4Bez,Pactos - Ao Vivo,31,46,13,Matheus & Kauan
+48,spotify:track:5H3m39zgDfXU2bFVA3e2YQ,TE ENCONTREI,48,—,1,MC Cabelinho
+49,spotify:track:1a5LfJGq0vuCWQ9Mme0Ac7,Deserto (Ao Vivo),40,51,13,Maria Marçal
+50,spotify:track:6bTdZ7xfKp3NqqADJ8HLyj,Vampiro,50,56,13,Matuê
+51,spotify:track:4pjznsLeoyimnxGlVpmyJI,NÉ SEGREDO,38,70,13,MC Cabelinho
+52,spotify:track:2hkwwmmLC90T8BQ7t3xufq,Roça Em Mim,16,41,13,Zé Felipe
+53,spotify:track:3xCkNUiap7EBjqnRldHSSh,Coladin (Minha Deusa),49,63,13,Zé Vaqueiro
+54,spotify:track:5ffDENIdtByAZxHpuuj9li,Vida Chique,37,62,13,Veigh
+55,spotify:track:0oB3IBEhbmgTrL7mV0VnFq,Novinha do Onlyfans (Tchan Ran Tchan Tchan),8,55,13,Kadu Martins
+56,spotify:track:2tFmuYL5D8zqBHvs0nG5Tn,Bonjour,50,78,11,KayBlack
+57,spotify:track:7aOBf2xYbux3bo1fwISo6b,BEM MELHOR,57,—,1,MC Cabelinho
+58,spotify:track:4DHcnVTT87F0zZhRPYmZ3B,Flowers,16,57,13,Miley Cyrus
+59,spotify:track:21XQbePSeOSvfuLRaZbZ7a,Mas Existe um Lugar - speed,19,48,5,Cryzin
+60,spotify:track:0P0k5KoLcxi0kf1jik4v8X,Deixa Eu Viver - Ao Vivo,52,52,3,Mari Fernandez
+61,spotify:track:4qDT0BeJ7BjatrN9k8AvB4,Flow Espacial,14,60,13,Teto
+62,spotify:track:7sopDXkuzXtHt8AQpdBxmT,DONA DE MIM,37,54,13,Ana Castela
+63,spotify:track:6eNRGL6Nkdg7RhJtmbcl0j,Luz do Luar,9,59,13,Mc Tato
+64,spotify:track:4mD9hjoTckjeL1CrJCx0MT,Puta Mexicana,8,58,13,DJ Jeeh FDC
+65,spotify:track:7bhvRvE56NHBvedx0EeALS,Comunicação Falhou - Ao Vivo,30,64,13,Mari Fernandez
+66,spotify:track:4Dvkj6JhhA12EX05fT7y2e,As It Was,42,68,13,Harry Styles
+67,spotify:track:2Vl7x4BkNhhJkEmQQMcV0V,Toma Tapa,33,71,13,Mc Jacaré
+68,spotify:track:5AdPP30mjJCtBMyYKZUEU7,Assunto Delicado - Ao Vivo,34,49,13,Guilherme & Benuto
+69,spotify:track:6MpYP4LUSb1MWfpsdToKyH,Duas,69,—,1,Nadson O Ferinha
+70,spotify:track:18yZLabAj1liqEUcgxDgeJ,Perdoou Nada - Ao Vivo,47,67,13,Israel & Rodolffo
+71,spotify:track:3LxUi6dRPOza6BFcM6xXdW,MINHA CURA - REMIX,71,—,1,MC Cabelinho
+72,spotify:track:52kcarcX0FQ6wPulXm2bMJ,Meca Cereja,66,75,13,Vulgo FK
+73,spotify:track:0bBwi6ddYeTv5fXgHAdfiH,Evoque Prata,13,69,13,MC MENOR HR
+74,spotify:track:2D1YgoOgqGfEENCtsZNXMi,Vai Vendo,74,—,1,Anitta
+75,spotify:track:7CIj5SFTB6WPJrYjLZN5bp,Pega o Guanabara - Ao Vivo,37,65,13,Wesley Safadão
+76,spotify:track:5tk0ERnzadzyexVfXA0yed,Mec Life,76,90,2,DJ ESCOBAR
+77,spotify:track:74myq4QbO9E8bTtLQuOWYY,Nu,77,—,1,Anitta
+78,spotify:track:0ssgd2ZvDawP0KHGfBYRpv,Good Vibe,75,79,13,Filipe Ret
+79,spotify:track:1OZ4uv7OAP24Ix6j3vojLt,Casei Com a Putaria,28,83,13,Mc Paiva ZS
+80,spotify:track:5WGTBzRLbjj0Sm3Br8X1rI,Bandido Não Dança,39,74,13,Mc Paiva ZS
+81,spotify:track:5XeFesFbtLpXzIVDNQP22n,I Wanna Be Yours,70,82,13,Arctic Monkeys
+82,spotify:track:13Rf6RaZT13TW4xLQR3MQr,Poesia Acústica #6: Era uma Vez,73,92,13,Pineapple StormTv
+83,spotify:track:5yscNPMHmhqHQX9B9GFzMp,Te Esqueci Sem Querer - Ao Vivo Em Brasília,83,88,2,Henrique & Juliano
+84,spotify:track:3lF4NH7uy1rRMHvmmK99TX,VOCÊ&EU,84,—,1,MC Cabelinho
+85,spotify:track:29adI8c6c75mnnaJ3BFLID,Parecia Tempestade,13,80,13,Sony no Beat
+86,spotify:track:3gCWngngUs1uojw33vrE8K,5 Regras - Ao Vivo,41,66,13,Jorge & Mateus
+87,spotify:track:2YT8DZ2sF0LFRNwu9b8s5L,Erro Que dá Certo,84,84,3,Thiago Aquino
+88,spotify:track:5FG4xRLY2JM6lSDCsbBfoi,A Culpa É Nossa,88,—,1,Nadson O Ferinha
+89,spotify:track:235CP5ItAYMS6usv3C8jkP,DEUS É MUITO BOM - Ao Vivo,89,—,1,Luan Santana
+90,spotify:track:0AIA4KsMsyqur8FbTVhGNT,SOLTEIROU - Ao Vivo,51,86,13,Luan Santana
+91,spotify:track:6a6UEfhgIKfzrZu1hqRYup,INEFÁVEL (feat. Leviano),84,91,8,Long beatz
+92,spotify:track:2X5o4nRiocnoaaQ2wMwaeC,Sorrisin De Puto,54,85,13,DJ Cayoo
+93,spotify:track:4W4fNrZYkobj539TOWsLO2,Die For You (with Ariana Grande) - Remix,18,89,11,The Weeknd
+94,spotify:track:4PQ5AInr4YoBauth9YPduL,Ai Papai,5,53,13,Anitta
+95,spotify:track:3C99BfGe301JNp7BqTX5Uu,Média Boa - Ao Vivo,49,73,13,Felipe e Rodrigo
+96,spotify:track:1Qrg8KqiBpW07V7PNxwwwL,Kill Bill,44,87,13,SZA
+97,spotify:track:72vwG7lcOTPgT2YgYpg505,Hackearam-me,45,72,8,Marília Mendonça
+98,spotify:track:3O2wrDL7nnSDZOrdZqxyoY,Noite Fria,21,77,9,Mc IG
+99,spotify:track:13SWee2K1tLqE8rzgoIAzC,Se Você for Embora,99,99,2,Tz da Coronel
+100,spotify:track:6cZqw8wIrMsFxCNMzLRbNU,Metade De Mim - Ao Vivo,59,81,9,Hugo & Guilherme

@@ -8,17 +8,23 @@ ENV/
 env/
 .env
 
-# Datasets (Heavy files)
-ml/datasets/
-datasets/
-*.csv
-!ml/models/genre_models_summary.csv
+# Datasets
+# Allow our new master database, but keep other heavy raw data ignored
+ml/datasets/*.csv
+!ml/datasets/brazilian_hits_v2.csv
 
-# Models (Keep only the compiled models)
-# We want to keep the .pkl files but ignore logs or other temp files
-ml/models/*
-!ml/models/*.pkl
+# Models (Ignore binary pkl files to keep repo light)
+ml/models/*.pkl
+ml/models/tests/
 !ml/models/*.csv
+
+# Binaries & Build Artifacts
+ffmpeg.exe
+build/
+dist/
+*.spec
+*.ico
+*.png
 
 # Uploads
 uploads/
@@ -33,7 +39,7 @@ uploads/
 .DS_Store
 Thumbs.db
 
-# Project specific temp files
+# Project specific temp/debug scripts
 ml/temp_*
 ml/analyze_*
 ml/public_*
@@ -45,3 +51,8 @@ ml/create_*
 ml/download_*
 ml/search_*
 ml/add_custom_*
+debug_*.py
+test_*.py
+clear_cache.py
+convert_icon.py
+build_exe.py

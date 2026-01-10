@@ -1,0 +1,101 @@
+rank,uri,track_name,peak,prev,streak,artist_names
+1,spotify:track:0fABszUFNbNq9IW503Gj8v,Tá OK,1,1,6,DENNIS
+2,spotify:track:4uqJelb9THHmJ3OCohg4ZJ,Nosso Quadro,1,2,16,AgroPlay
+3,spotify:track:3PH1nUysW7ybo3Yu8sqlPN,Seu Brilho Sumiu - Ao Vivo,3,3,16,Israel & Rodolffo
+4,spotify:track:0U9CZWq6umZsN432nh3WWT,"Gol Bolinha, Gol Quadrado 2",4,10,3,Mc Pedrinho
+5,spotify:track:51pxwIxDVCbFHW8oyJFQXD,Erro Gostoso - Ao Vivo,4,4,16,Simone Mendes
+6,spotify:track:7KWgILiigX4Qr2WFeeerkc,Oi Balde - Ao Vivo,2,5,16,Zé Neto & Cristiano
+7,spotify:track:0JIYoXtJfORxI6gRpHv6ZW,Traumatizei - Ao Vivo Em Brasília,4,6,16,Henrique & Juliano
+8,spotify:track:0redQHBfejmPUhonR5ppGC,Duas Três,5,8,16,Guilherme & Benuto
+9,spotify:track:7IPEkUJsnWYNyBkK2i2FPj,Mágica - Ao Vivo,3,9,14,Hugo & Guilherme
+10,spotify:track:4zUFA8l78k4tCmoVuGtV8z,MEIO TERMO - Ao Vivo,10,12,4,Luan Santana
+11,spotify:track:4PJJAeZfpRFQa4jfIPwMP1,Pátio do Posto - Ao Vivo,7,7,16,Zé Neto & Cristiano
+12,spotify:track:3Nvzs0cJbLwhXPPlI8xzpC,Vai Novinha Ah Ah Ah,12,30,2,Dyamante DJ
+13,spotify:track:4sqpSDnTrbS8v7RMNCUyqS,Não Vitalício (Nunca Mais) - Ao Vivo,8,11,16,Matheus & Kauan
+14,spotify:track:7DkhndGTKaqkFxxKN7XlAh,Manda um Oi - Ao Vivo,13,13,8,Guilherme & Benuto
+15,spotify:track:2uhw2oYbugGJbn10wipNX5,Novidade na Área,15,68,2,Mc Livinho
+16,spotify:track:0SCMVUZ21uYYB8cc0ScfbV,Bombonzinho - Ao Vivo,4,16,16,Israel & Rodolffo
+17,spotify:track:0ZAL7RbP2FsM3rObV60o7T,Namorando Ou Não - Ao Vivo,8,14,16,Clayton & Romário
+18,spotify:track:2pidGuLSSVZPcbzE5QA1Ux,Elevador - Ao Vivo,18,20,4,Hugo & Guilherme
+19,spotify:track:4hKLzFvNwHF6dPosGT30ed,Novo Balanço,12,15,7,Veigh
+20,spotify:track:2d2K6DhHPBsi78K9E0cWrD,Leão,2,19,16,Marília Mendonça
+21,spotify:track:4f0aDk7HX37SfzerfznYlr,Lapada Dela - Ao Vivo,18,21,16,Grupo Menos É Mais
+22,spotify:track:3o4wcB1Y6xC62eF02n9RSZ,ELA PIROU NA DODGE RAM,13,17,16,Luan Pereira
+23,spotify:track:1nf1HJdTWXwf9XHQebGlOd,Quando Apaga A Luz - Ao Vivo,16,22,16,Gustavo Mioto
+24,spotify:track:3dgeqa8u8FenXF9cNbVdsF,Um Mês E Pouco - Ao Vivo,24,40,2,Zé Neto & Cristiano
+25,spotify:track:4pWsXhLUdtBKlw9npIXZAl,Halls na Língua,25,57,3,Kadu Martins
+26,spotify:track:1L7hWEc3tVjvmbw48ShktM,Desejo Imortal (It Must Have Been Love) - Ao Vivo,14,25,12,Gusttavo Lima
+27,spotify:track:5yscNPMHmhqHQX9B9GFzMp,Te Esqueci Sem Querer - Ao Vivo Em Brasília,24,27,11,Henrique & Juliano
+28,spotify:track:6dtQM0CXRFJgD7ifUNosZj,Desandei - Ao Vivo,28,34,9,Lauana Prado
+29,spotify:track:3khLpwuyIjEOw8vfJ1oUIT,Papin,26,28,10,MC Kevin o Chris
+30,spotify:track:51FFbyL0PjkYtjXJQP0JoP,Saudade da Minha Vida - Ao Vivo,12,26,16,Gusttavo Lima
+31,spotify:track:4ASA1PZyWGbuc4d9N8OAcF,Eu Gosto Assim - Ao Vivo,13,29,16,Gustavo Mioto
+32,spotify:track:5aqwwgL4XOv2YJYwLiqKOZ,A Culpa É Nossa - Ao Vivo,17,31,16,Maiara & Maraisa
+33,spotify:track:12YCtLHGk6tP6RbHDHflCs,Cartão Black,8,24,8,MC Caverinha
+34,spotify:track:1mimc5QiUuwmVYdXkWvgOQ,MOLETOM,34,—,1,Luan Pereira
+35,spotify:track:745VUhm32odbxJI2q1rUMv,Ela Voltou de Perna Bamba,22,23,7,MC Guh SR
+36,spotify:track:7CUQQLRMIeSfa4m2uQcRHp,Rancorosa - Ao Vivo Em Brasília,12,18,15,Henrique & Juliano
+37,spotify:track:7sopDXkuzXtHt8AQpdBxmT,DONA DE MIM,22,33,16,Ana Castela
+38,spotify:track:77BR4gaUAp3p0uA8UL6HT9,Não Para,34,36,16,Belle Kaffer
+39,spotify:track:6L2ule7uWSdh1qjcMO3vUD,Quem tá Pegando,39,42,7,Murilo Huff
+40,spotify:track:15nTZqWfpXZk9Xh043Ognh,Posturado E Calmo,40,62,3,Leo Santana
+41,spotify:track:1Z3QqD45wKKN6fUKBXSvcZ,Pirulito Vermelho,41,41,3,Diego & Victor Hugo
+42,spotify:track:0KXdSF0Poa57KOepZ3hKrh,Palhaça - Ao Vivo,19,32,16,Naiara Azevedo
+43,spotify:track:09pQ3lGyMTpW3rz7a71zwQ,Metade De Mim - Ao Vivo,9,37,16,Hugo & Guilherme
+44,spotify:track:3P2ubMyuL9NQOVU67TVCXA,"Love, Love",44,51,2,Melody
+45,spotify:track:4KUj5wxJuY9Nf7L6guRxrU,Abre A Mente - Ao Vivo Em Brasília,42,47,4,Henrique & Juliano
+46,spotify:track:2LTlykcdu0gwb7zcKneo2a,Melhor Só,18,35,14,KayBlack
+47,spotify:track:1JxrRikYoQjq2hlogQFyv5,Vai Luan - AgroPlay Verão,47,84,2,AgroPlay
+48,spotify:track:7Ht57bh2FwiQLwRH9zqESG,085 - Ao Vivo,26,39,16,MC Rogerinho
+49,spotify:track:0Q1oLvAI9QaD3DIlvluTqx,Voltou Com Quem Não Voltava - Ao Vivo,36,49,7,Israel & Rodolffo
+50,spotify:track:22sAwsBH0NoNJXnrBenQuO,Sem Aliança no Dedo,6,44,16,MC Xenon
+51,spotify:track:2BlFIe0712LBUtTHxbqjme,Love Gostosinho - Ao Vivo,27,48,16,NATTAN
+52,spotify:track:156LKAN2oh16qflL5oz4tO,Os Bico Tão Se Perguntando (Let’s Go 3),17,46,12,MC PH
+53,spotify:track:3ktTWpYdXrYApH54cBo4Ap,Conexões de Máfia (feat. Rich The Kid),13,45,10,Matuê
+54,spotify:track:2M4kQD87lKnAS9vFlb4Bez,Pactos - Ao Vivo,21,38,16,Matheus & Kauan
+55,spotify:track:7nFvKgVumc9FcU97zGjjei,Coração de Gelo,22,43,16,WIU
+56,spotify:track:2LJLGfBHKFmNdD4iXRRPXV,Solteiro Frustrado - Ao Vivo,50,50,3,Gusttavo Lima
+57,spotify:track:5WsM6qhZzRSD3oKbtorxzD,Aquecimento Senta Senta Suave,14,52,16,MC Kevin o Chris
+58,spotify:track:5Ubx4DpvVodvsGH9ilxPVi,Haja Colírio (feat. Hugo & Guilherme) - Ao Vivo,26,56,16,Guilherme & Benuto
+59,spotify:track:39xOREhViooEYFpmnKTdrl,Engana Dizendo Que Ama,41,53,7,Veigh
+60,spotify:track:5TtTijiNYtFc6ktQARjY30,Preferida,34,55,13,KayBlack
+61,spotify:track:5pBU3Yihoa4hiwQ2T5fGhH,Esse B.O é Meu - Ao Vivo,29,60,16,Guilherme & Benuto
+62,spotify:track:74Le949TrZk4zwDjtWzH23,Cavalo de Pau,40,59,16,Bruno & Denner
+63,spotify:track:7kJ0aTB5gLMYrJjYft3Vx6,Na Contramão,60,61,7,DJ Katrip
+64,spotify:track:3qzG6438hhYTqXKCatISsz,Barulho Do Foguete - Ao Vivo,64,—,1,Zé Neto & Cristiano
+65,spotify:track:2Vl7x4BkNhhJkEmQQMcV0V,Toma Tapa,43,63,16,Mc Jacaré
+66,spotify:track:6hu4HvpNzrW2RIEEAZC3vD,Segredo,45,54,13,KayBlack
+67,spotify:track:6UHMmTS8TfWK3vKvoEZOQG,Me Gusta - AgroPlay Verão,46,65,6,AgroPlay
+68,spotify:track:18yZLabAj1liqEUcgxDgeJ,Perdoou Nada - Ao Vivo,18,66,16,Israel & Rodolffo
+69,spotify:track:6tW23l5oRR8XyYJsF5si9G,Eu Minto (Ao Vivo),57,—,1,US Agroboy
+70,spotify:track:1YTzCKxoOSZOqcNh6wa15I,Galopeira,70,70,8,MC Menor MT
+71,spotify:track:7tgGpFp1FtgLtqrFB7LNeo,Nem Que Seja Chorando - Ao Vivo,20,67,8,Hugo & Guilherme
+72,spotify:track:5y7yYXNSsT89A27DQxbmUL,Covardia,34,64,14,Wesley Safadão
+73,spotify:track:7CJJ7JC3kj9XdweWTvfVhX,Vacilão,4,69,16,Zé Felipe
+74,spotify:track:5AdPP30mjJCtBMyYKZUEU7,Assunto Delicado - Ao Vivo,30,71,16,Guilherme & Benuto
+75,spotify:track:3gCWngngUs1uojw33vrE8K,5 Regras - Ao Vivo,27,73,16,Jorge & Mateus
+76,spotify:track:2slHCHYP7ogpGSsCumJT1a,Fulano - Ao Vivo,39,78,14,Murilo Huff
+77,spotify:track:6xRDvureEBwHgwAYDufbJL,Chorei na Vaquejada,77,82,4,Eric Land
+78,spotify:track:5vdQUAFncALEH9EQvyAqIX,Forte Forte de Lacoste - Pra Começar o Final de Semana,78,79,2,DJ Jeeh FDC
+79,spotify:track:5WGTBzRLbjj0Sm3Br8X1rI,Bandido Não Dança,36,77,16,Mc Paiva ZS
+80,spotify:track:1JQ1ylL2JEjC6Ib7IJgOvS,Coração Amoleceu,74,80,16,Mc Don Juan
+81,spotify:track:3C99BfGe301JNp7BqTX5Uu,Média Boa - Ao Vivo,29,83,16,Felipe e Rodrigo
+82,spotify:track:4kAMyuJBbmJrbr6TLOWbEk,Beijo de Glicose - Ao Vivo,43,86,16,Diego & Victor Hugo
+83,spotify:track:6eNRGL6Nkdg7RhJtmbcl0j,Luz do Luar,25,85,16,Mc Tato
+84,spotify:track:2X5o4nRiocnoaaQ2wMwaeC,Sorrisin De Puto,65,74,16,DJ Cayoo
+85,spotify:track:0nVpE03Iv9uioPSomEN5v0,Funk Rave,75,75,2,Anitta
+86,spotify:track:0AIA4KsMsyqur8FbTVhGNT,SOLTEIROU - Ao Vivo,35,58,16,Luan Santana
+87,spotify:track:1TgVaCf8D5mXZrK1d7uIZe,Bebê Tá Solta,47,90,16,Yuri Redicopa
+88,spotify:track:2hkwwmmLC90T8BQ7t3xufq,Roça Em Mim,31,96,16,Zé Felipe
+89,spotify:track:0BWEkqsmPe3qOzrRVztHU3,Acabei de Terminar - Ao Vivo,70,91,16,Paulo e Nathan
+90,spotify:track:2zDwJnP9n9yCUyfiLIwkDM,Se Ele Soubesse - Ao Vivo,47,92,16,Guilherme & Santiago
+91,spotify:track:0tBgLNgCmRTmqrydcFfQjt,Ia Dar Bom,73,—,1,Pedro Paulo & Alex
+92,spotify:track:0bBwi6ddYeTv5fXgHAdfiH,Evoque Prata,33,89,16,MC MENOR HR
+93,spotify:track:6dlNqhT9zRfNkCEsrodIdz,Me Bloqueia - Ao Vivo,63,87,15,Zé Neto & Cristiano
+94,spotify:track:6obqb3vA4kufqEHibtF5W1,Guarda Roupa - Ao Vivo,53,—,1,Fred & Fabrício
+95,spotify:track:7zmS0vPbWg2k6sfL3uqrGD,Cê Não Me Superou - Ao Vivo,88,88,3,Luiza Martins
+96,spotify:track:3k79jB4aGmMDUQzEwa46Rz,vampire,96,—,1,Olivia Rodrigo
+97,spotify:track:4NNZZXHgn9F3cCgC1YGmLl,Todo Seu - Ao Vivo,59,99,16,Jorge & Mateus
+98,spotify:track:4mD9hjoTckjeL1CrJCx0MT,Puta Mexicana,35,97,16,DJ Jeeh FDC
+99,spotify:track:3SWqd8gFeeItkeXwcPI77K,Flor De Plástico - Ao Vivo,55,100,13,Fred & Fabrício
+100,spotify:track:1OZ4uv7OAP24Ix6j3vojLt,Casei Com a Putaria,57,95,16,Mc Paiva ZS

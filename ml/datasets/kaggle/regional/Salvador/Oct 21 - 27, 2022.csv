@@ -1,0 +1,101 @@
+rank,uri,track_name,peak,prev,streak,artist_names
+1,spotify:track:4ASA1PZyWGbuc4d9N8OAcF,Eu Gosto Assim - Ao Vivo,1,1,5,Gustavo Mioto
+2,spotify:track:7qoIhutxU269Zqo9PG5IOj,Poesia Acústica 13,1,2,6,Pineapple StormTv
+3,spotify:track:1OZ4uv7OAP24Ix6j3vojLt,Casei Com a Putaria,3,4,12,Mc Paiva ZS
+4,spotify:track:2orGm2E68ODFYOURjaES62,Felina,4,7,5,WIU
+5,spotify:track:7bhvRvE56NHBvedx0EeALS,Comunicação Falhou - Ao Vivo,1,3,26,Mari Fernandez
+6,spotify:track:3yHXEidSu4gYVRqKoI653O,Assunto Delicado - Ao Vivo,6,6,8,Guilherme & Benuto
+7,spotify:track:6TnCI16uLWhyQCrHva9VWj,Te Love - Ao Vivo,5,5,7,Kevi Jonny
+8,spotify:track:1ELsaYdj2NlxLvkx9g24xZ,Haja Colírio (feat. Hugo & Guilherme) - Ao Vivo,7,8,16,Guilherme & Benuto
+9,spotify:track:2qmG7dokbGpDGD0T5wORWt,Balanço da Rede,2,9,32,Matheus Fernandes
+10,spotify:track:6Ulh9GPYz6JKdv04qc3q2U,Dengo,1,10,25,João Gomes
+11,spotify:track:6gyhp7IcNhTYzwlk8utsgP,Beijo de Glicose - Ao Vivo,11,16,7,Diego & Victor Hugo
+12,spotify:track:5vC8UAOHeG95ehRzZChniB,Ai Preto,2,11,19,L7NNON
+13,spotify:track:3nqQXoyQOWXiESFLlDF1hG,Unholy (feat. Kim Petras),11,13,5,Sam Smith
+14,spotify:track:7LUZT12r4xmwR1Kh8TJgjv,Ex dos Meus Sonhos - Ao Vivo,12,12,3,Gusttavo Lima
+15,spotify:track:3gCWngngUs1uojw33vrE8K,5 Regras - Ao Vivo,14,14,11,Jorge & Mateus
+16,spotify:track:0dcHD9QhnWRA41zoLnC83X,X1,16,18,18,MC Cabelinho
+17,spotify:track:0XyPPyGes0omXppV5YE8gy,Gostosinha é Ela,6,15,13,Felipe Amorim
+18,spotify:track:4pjznsLeoyimnxGlVpmyJI,NÉ SEGREDO,18,21,5,MC Cabelinho
+19,spotify:track:0V3wPSX9ygBnCm8psDIegu,Anti-Hero,19,—,1,Taylor Swift
+20,spotify:track:7HdWqZjUmIHK5B8zwPCRds,Áudio Que Te Entrega - Faixa Bônus,6,19,31,Leo Santana
+21,spotify:track:4QWumyD2uwiePBBha9XBHI,No Ouvidinho,1,17,30,Felipe Amorim
+22,spotify:track:4UldILPVpnZO69ffK4B9aA,Tubarão Te Amo,22,39,3,Dj LK da Escócia
+23,spotify:track:4xxeEWGQNFQ6qehlnev5LS,Te Amo Demais,5,20,14,Marília Mendonça
+24,spotify:track:6bTdZ7xfKp3NqqADJ8HLyj,Vampiro,1,22,30,Matuê
+25,spotify:track:6Zw25LRLP0j0MsezDFIUM4,Mal Feito - Ao Vivo,6,25,41,Hugo & Guilherme
+26,spotify:track:3ShKPhFkexrwl7WoyTtNND,Tchuco Nela,4,24,28,MC Rogerinho
+27,spotify:track:25rz3D4oroFC0GXm3xFXnG,Tem Cabaré Essa Noite,1,23,15,Nivaldo Marques
+28,spotify:track:7AwVSKaQxpidrtYBerkHKk,Pipoco,5,26,17,Ana Castela
+29,spotify:track:6gEOM9IEBzvTdbwNrSkBdC,Fala Mal de Mim - Ao Vivo,11,27,16,Gusttavo Lima
+30,spotify:track:5cCwZJUf8QiCQGnyakhpmF,Papo de Agustinho,30,68,2,Oruam
+31,spotify:track:4NNZZXHgn9F3cCgC1YGmLl,Todo Seu - Ao Vivo,18,29,25,Jorge & Mateus
+32,spotify:track:3ZtHHGpAPSWC7Gnios4lmK,Metflix,19,30,14,Mc Poze do Rodo
+33,spotify:track:4vWh6tEfcLzdvYWp2IlOJS,CORAÇÃO CIGANO - Ao Vivo,5,28,11,Luan Santana
+34,spotify:track:4Dvkj6JhhA12EX05fT7y2e,As It Was,15,31,30,Harry Styles
+35,spotify:track:3lQnTQFBxk1HMsj8aa4syY,Virando o Olhinho,17,48,16,Kadu Martins
+36,spotify:track:2HMbGPbGiqGaHXzFkQAmZI,Basiquinho - Ao Vivo,27,32,9,Matheus & Kauan
+37,spotify:track:0i4UV3HjjvsUuV3BajEXoD,Baile no Morro,8,33,18,MC Tairon
+38,spotify:track:5etfNcFAD9M8uibXpYMxfQ,Tu Tava Na Revoada - Ao Vivo,12,36,22,Wesley Safadão
+39,spotify:track:5jQI2r1RdgtuT8S3iG8zFC,Lavender Haze,39,—,1,Taylor Swift
+40,spotify:track:4nRa5qkXIfswPbt20rkslI,Debaixo do Cobertor,23,38,19,Felipe Amorim
+41,spotify:track:2M4kQD87lKnAS9vFlb4Bez,Pactos - Ao Vivo,41,—,1,Matheus & Kauan
+42,spotify:track:3EM71GPnUGJ75uDhkH77pq,Insônia - Ao Vivo,31,37,9,LUDMILLA
+43,spotify:track:4cxQWmXmmbFoWvV8qipQTe,Perfeito Pra Ficar Sozinho - Ao Vivo,35,35,11,Murilo Huff
+44,spotify:track:1xzi1Jcr7mEi9K2RfzLOqS,CUFF IT,41,46,4,Beyoncé
+45,spotify:track:7afaZ37wJJL6880z1NRgJS,Fim de Semana no Rio,4,40,30,Teto
+46,spotify:track:3imzmQM2DPPVBLMiBBexRL,202,24,34,10,Kweller
+47,spotify:track:04vzhKfl5HtPEgrdZJCZ7L,Bagulho Louco,42,42,8,Mc Paiva ZS
+48,spotify:track:1wtOxkiel43cVs0Yux5Q4h,Snow On The Beach (feat. Lana Del Rey),48,—,1,Taylor Swift
+49,spotify:track:5PZAbR6JHYYV9xp5gv0XES,Bandido,2,43,19,Zé Felipe
+50,spotify:track:4eTtgdIXEy2LvLeg7NNSov,Vizão de Cria 2,50,51,12,Dallass
+51,spotify:track:42nZBOwXNdO24Ml032bLBS,Gatilho - Ao Vivo,25,47,31,Matheus & Kauan
+52,spotify:track:4x5q5T5mhE1xvoCVXY6qrN,Melodia Alucinógena,20,44,12,DJ AK BR
+53,spotify:track:40fRA3sONEHzt20oKvyhRA,Só de Imaginar - Ao Vivo,40,50,12,Mari Fernandez
+54,spotify:track:14uWxelOuAUajP8fDvc0Ct,Falta Você,51,52,14,Thiaguinho
+55,spotify:track:2ykYxd8UGHOsdjP3Z5jSHh,Cheiro de Balada - Ao Vivo,32,41,11,Hugo & Guilherme
+56,spotify:track:3rWDp9tBPQR9z6U5YyRSK4,Midnight Rain,56,—,1,Taylor Swift
+57,spotify:track:1iaPDgTbsKrlznVu13EWIf,ESSÊNCIA DE CRIA,42,54,42,MC Cabelinho
+58,spotify:track:6bwx7pcKJY05D9S6CVa1k6,Nem Namorado e Nem Ficante - Ao Vivo | Faixa Bônus,42,49,21,Israel & Rodolffo
+59,spotify:track:1K8AtBJXcdq5mywMnZuARP,Termina Comigo Antes,7,45,30,Gusttavo Lima
+60,spotify:track:7bh2ybqXcEoIYL8FwiAMou,Intuição - Ao Vivo,20,58,18,Mari Fernandez
+61,spotify:track:4m8kG46clzxMxyrDuFo1Uq,Horas Iguais,53,53,2,WIU
+62,spotify:track:3eX0NZfLtGzoLUxPNvRfqm,Maroon,62,—,1,Taylor Swift
+63,spotify:track:5IgjP7X4th6nMNDh4akUHb,Under The Influence,63,65,5,Chris Brown
+64,spotify:track:1RgJ4lexKGNBlKnyxB5SRt,Balazul,20,57,20,Teto
+65,spotify:track:4uUG5RXrOk84mYEfFvj3cK,I'm Good (Blue),63,63,4,David Guetta
+66,spotify:track:3JHIuBa3hDJk3DQ9m6xFrp,Pelado,39,59,17,NATTAN
+67,spotify:track:5PSkF3QpVMlAx8U5Inxj39,Vento Forte,20,61,13,Mc Jacaré
+68,spotify:track:5wAoMzm5LaIvGED0JNeBfY,Cão Sem Dono,62,62,2,Mari Fernandez
+69,spotify:track:6KKT8dzP21J4WwBp9swjob,Sonho Dos Cria,42,72,19,Filipe Ret
+70,spotify:track:0jAAnWNbcHf6X1EXOtvOT7,Incendeia,22,55,15,MC Kevin o Chris
+71,spotify:track:0zTZONeg1hFNplaZGc7siE,Não faz isso Comigo não,64,64,12,Tz da Coronel
+72,spotify:track:0ssgd2ZvDawP0KHGfBYRpv,Good Vibe,62,71,17,Filipe Ret
+73,spotify:track:4D7BCuvgdJlYvlX5WlN54t,"You're On Your Own, Kid",73,—,1,Taylor Swift
+74,spotify:track:3jrxlhAtoxi83qc76NT9EG,7 Meiota,46,70,17,Filipe Ret
+75,spotify:track:1xwAWUI6Dj0WGC3KiUPN0O,Vigilante Shit,75,—,1,Taylor Swift
+76,spotify:track:7HjZD0NPC1hzFpjUjo45GR,Me Sinto Abençoado,21,77,46,Mc Poze do Rodo
+77,spotify:track:4can6ssapSsRCEbZZfYL8K,Poesia Acústica 12 - Pra Sempre,20,73,35,Pineapple StormTv
+78,spotify:track:3IMLoeLerS7TMpKjxUgAhx,Arranhão - Ao Vivo,5,56,54,Henrique & Juliano
+79,spotify:track:1TFqH3zKOiTZoVe0OQuJte,Até Que Durou / Tu Mandas No Meu Coração / Adorei / Supera,76,81,7,Grupo Menos É Mais
+80,spotify:track:0BWEkqsmPe3qOzrRVztHU3,Acabei de Terminar - Ao Vivo,45,69,12,Paulo e Nathan
+81,spotify:track:0K3u2t8YNuJ5NR9lKC1frv,AMEIANOITE,81,—,1,Pabllo Vittar
+82,spotify:track:5r9CZJMoMmxio2AnJdxuDS,Pot-Pourri: Melhor Eu Ir / Ligando Os Fatos / Sonho de Amor / Deixa Eu Te Querer - Ao Vivo,59,74,15,Grupo Menos É Mais
+83,spotify:track:72g37RoelSnovZakG5MwnF,Parada Louca,3,75,50,Mari Fernandez
+84,spotify:track:7KWKWJnbGJ3Soag6Oopion,CACHORRINHAS,6,76,15,Luísa Sonza
+85,spotify:track:0heeNYlwOGuUSe7TgUD27B,Question...?,85,—,1,Taylor Swift
+86,spotify:track:5CJzNKWqr1gLUgZ2Yx7CZy,Samba do Polly,16,66,15,Oh Polêmico
+87,spotify:track:5mJFh4iRzgmWuEVPG8257V,Quem Não Conhece Tá Sem Internet,87,91,2,MC Marks
+88,spotify:track:13Rf6RaZT13TW4xLQR3MQr,Poesia Acústica #6: Era uma Vez,61,87,12,Pineapple StormTv
+89,spotify:track:1cybtRrPQaec3kSihCYL55,Você Não Entende Nada - Spotify Singles,89,—,1,Mari Fernandez
+90,spotify:track:5lCAtKxkZL6tFDyGX9t87j,Eu Já Tava Bem - Ao Vivo,10,86,47,Wesley Safadão
+91,spotify:track:2TdOWHAolNaQx8gyRDVS1N,ERRO PLANEJADO - Ao Vivo,8,67,28,Luan Santana
+92,spotify:track:3XF598RmEUF3XW4XKo1lyP,Meu Número - Ao Vivo,49,79,27,Hugo & Guilherme
+93,spotify:track:68qqVn5kHBv4zc45SDGLnh,Corte Americano,48,97,2,Filipe Ret
+94,spotify:track:2rtsT3CefzKc05JdAm8aQ5,Digo ou Não Digo - Ao Vivo,89,89,2,João Gomes
+95,spotify:track:6BF3nZQkAg9qvE0DLVSfyH,Hotel Caro,8,82,20,Baco Exu do Blues
+96,spotify:track:6o6PKPQH9c6egl0VROLpLN,P Q P,36,80,28,NATTAN
+97,spotify:track:58VUikMywNpRelwEx8khdh,Mel do Egito,97,99,2,Leandro e as Abusadas
+98,spotify:track:7KokYm8cMIXCsGVmUvKtqf,Karma,98,—,1,Taylor Swift
+99,spotify:track:3gx9a8ea1nI0Wym9hJpdbJ,Hino dos Mlks,99,—,1,BIN
+100,spotify:track:4qsOrxBv09HhNSpsgMRXdC,Esqueça-Me Se For Capaz,1,85,54,Marília Mendonça

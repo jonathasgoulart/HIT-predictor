@@ -1,0 +1,101 @@
+rank,uri,track_name,peak,prev,streak,artist_names
+1,spotify:track:1c4htMHiolERc0YJvZNdlc,Vai Lá Em Casa Hoje,1,1,7,George Henrique & Rodrigo
+2,spotify:track:4qsOrxBv09HhNSpsgMRXdC,Esqueça-Me Se For Capaz,1,2,8,Marília Mendonça
+3,spotify:track:4u06FbRh6FvV2FQZkouzCw,Arranhão - Ao Vivo,2,3,8,Henrique & Juliano
+4,spotify:track:0JdkDCdrhMOaeXjIZdeBXN,Ela me Falou Que Quer Rave,2,4,6,MC Levin
+5,spotify:track:2wG1R0uDFwyobcWzVssC1J,GALOPA,3,5,8,PEDRO SAMPAIO
+6,spotify:track:4fSHADbZbhpZCT9oJpxwbP,Ameaça,6,7,6,Paulo Pires
+7,spotify:track:3YvE7uo4ffseBoJPh8IhHp,Presepada,7,8,5,Marília Mendonça
+8,spotify:track:2RGIuYTsyyHoOCqW0krvNE,Coração Cachorro,1,6,8,Avine Vinny
+9,spotify:track:5VTjBl3ddZEiG2LrH4VzyR,Toma Toma Vapo Vapo,9,10,4,Zé Felipe
+10,spotify:track:053zWWZDziDJd3U94x8RuP,Todo Mundo Menos Você,8,9,8,Marília Mendonça
+11,spotify:track:0DsPj89zlY3Us7xb5cXK5h,"Trava na Pose, Chama no Zoom, Da um Close (feat. Mc Rennan)",2,11,8,DJ Patrick Muniz
+12,spotify:track:48Ll1C6qAnP2UjnopQDh4a,Bala Love,4,13,8,Mc Anjim
+13,spotify:track:4kGdnA7FzSVsXC29LPghej,Revoada No Colchão,4,12,8,Zé Felipe
+14,spotify:track:5Q0ZnQjk4lQpScX7ujswun,A Maior Saudade - Ao Vivo,11,16,8,Henrique & Juliano
+15,spotify:track:7pvrsbBKUQI2QmA74WCJa5,Ela e Ela,7,14,8,Zé Neto & Cristiano
+16,spotify:track:3agFBAMPiIvzfTh7a9Udm6,Nota de Repúdio - Ao Vivo,6,15,8,Gusttavo Lima
+17,spotify:track:72g37RoelSnovZakG5MwnF,Parada Louca,17,23,3,Mari Fernandez
+18,spotify:track:2ixi9HWJw5lnLDmRMsiCS5,Você Beberia Ou Não Beberia?,8,17,8,Zé Neto & Cristiano
+19,spotify:track:7MLCxrDoxcTRg1u3QAGE5a,Bloqueado - Ao Vivo,19,36,2,Gusttavo Lima
+20,spotify:track:1bWBG6IkMnDr3qvCKSvQT7,Baby Me Atende - Ao Vivo,9,19,8,Matheus Fernandes
+21,spotify:track:1tYJnXtKLoWVIL4lZOouQG,Cê Tá Preparada - Ao Vivo,15,20,8,Tayrone
+22,spotify:track:1wdhj1r7aeWVDUl9d18YKu,Expectativa x Realidade,15,18,8,Matheus & Kauan
+23,spotify:track:4PQdrXMDHDPl1RczrrlADd,MORENA,12,24,8,Luan Santana
+24,spotify:track:2jwrYBGz7osKI31v50bS7b,Putariazinha,15,22,8,Felipe Amorim
+25,spotify:track:2kJRlOyrxsy7Ot3c5TZ8Q6,Meu Pedaço de Pecado,12,29,8,João Gomes
+26,spotify:track:3Lw41pfko5XMrsHRtlbo2k,Bota a Mão no Chão,25,25,4,Felipe Cardoso DJ
+27,spotify:track:6fe5D0ivKnpXFMAnoSRjah,Localiza Aí BB,24,27,8,Vitor e Luan
+28,spotify:track:1d7AtPeraWVsvI4U1YTHt1,Vestido Coladinho,28,44,8,Max e Luan
+29,spotify:track:7aZusA4cWXz3Wv9e9uhavz,Quer Voar,10,26,8,Matuê
+30,spotify:track:4XiFqfUXyTwOChvMLKKi0T,Sem Sentimento,17,28,8,DG e Batidão Stronda
+31,spotify:track:2R9IrE42Mw4zdUXAEFNiZL,Senta Danada,21,30,8,Zé Felipe
+32,spotify:track:7xVSNhAUQhUIpwfR6lTOwA,Por Supuesto,20,21,6,Marina Sena
+33,spotify:track:62d4BfCTUHdOsARRETHLDz,Mete a Louca,32,32,4,MC Rogerinho
+34,spotify:track:2xebCnKCjYWBhJ4Ai8hO5E,Set dos Casados,34,38,7,Mc Davi
+35,spotify:track:5SwyN9hzmWjBsINlif8li8,Ficha Limpa,16,37,8,Gusttavo Lima
+36,spotify:track:2ookQf9qP2qiBuNFnNXyfl,Chega E Senta - Ao Vivo,11,31,8,John Amplificado
+37,spotify:track:50gPsfGHy5OnPauA9455DM,Rolê,19,35,8,Tarcísio do Acordeon
+38,spotify:track:6m84TzSTM5nbwZxIxkYHz6,Namorando Com Saudade,31,42,8,Jorge & Mateus
+39,spotify:track:6T6SDJszPbuMCBpSm3aS3G,Carinha de Neném,28,39,8,Japãozin
+40,spotify:track:79Wou8NwYEFzTyDQudjENF,Desbloqueado - Ao Vivo,23,43,8,Diego & Victor Hugo
+41,spotify:track:6WxpU2F5gwTzwYsAalI6nI,Motel Afrodite,16,33,5,Marília Mendonça
+42,spotify:track:2MZQAvsA7aZDssppBLRxYp,Batom de Cereja - Ao Vivo,42,48,8,Israel & Rodolffo
+43,spotify:track:28m65cMH7QXHzFnZSTtNHY,Não Sei o Que Lá,34,40,5,Marília Mendonça
+44,spotify:track:2s9BO8c0co0PmgBiUoTT17,A QUEDA,23,41,8,Gloria Groove
+45,spotify:track:3eq6zwPwN5SAw0rZxNHI22,Não Me Arranha - Ao Vivo,26,34,8,Gusttavo Lima
+46,spotify:track:4AAIAVjSyiq1N7SXKkwXZe,Troca de Calçada,16,46,5,Marília Mendonça
+47,spotify:track:6pQKUKBpwr6GhfhcFFFozo,Não Nasceu pra Namorar,18,47,8,MC Zaquin
+48,spotify:track:77rIMl1WIrLf4ZDKFYZ4ji,Água Nos Zói - Ao Vivo,48,55,7,Clayton & Romário
+49,spotify:track:2jb8HW2CXr4mOJaw7LJyVw,Acordo - Ao Vivo,37,45,7,Henrique & Juliano
+50,spotify:track:5Z9KJZvQzH6PFmb8SNkxuk,INDUSTRY BABY (feat. Jack Harlow),28,49,8,Lil Nas X
+51,spotify:track:6Lrzxd7ST5oQ6FYKXKH7Ia,Vagabundo,30,51,8,Matheus & Kauan
+52,spotify:track:2PZmUFZGlUqkYJL0s0Cl6C,Dar uma Namorada - Ao Vivo,52,52,3,Israel & Rodolffo
+53,spotify:track:0FqVtQxRD3HsPltldG5v5M,Aquelas Coisas,41,64,8,João Gomes
+54,spotify:track:53BkPZwlaLbW77uV9BnJkl,Eu Fiz o Jogo Virar,27,50,8,Mc Poze do Rodo
+55,spotify:track:1hs2hRwPfyFLoYIf6jY1W7,Zero Saudade - Ao Vivo,25,54,8,Os Barões Da Pisadinha
+56,spotify:track:2aqqXrjrPdRHU9uSeRmL3C,Menina Se Prepara,44,56,8,Mc Pepeu
+57,spotify:track:0NvVVP3Q0oSbfBUZ48vCHs,Tiffany,47,53,5,MD Chefe
+58,spotify:track:452LVnTBjXYW3guqe3xiqI,Vamo Tomar Uma,28,62,8,Zé Neto & Cristiano
+59,spotify:track:7m9Hr6qAquvk6nNFtBIlM0,Modo Avião - Ao Vivo,59,72,2,DENNIS
+60,spotify:track:2OEz3Dxs9yOEblN5Kk52Sv,Profissão F0Da,60,69,4,Mc Delux
+61,spotify:track:7xi4XR5EIOU6OHdIydLMjT,Uma Ex - Ao Vivo,61,70,2,Murilo Huff
+62,spotify:track:0qxLQ6opocOGyFnlXqJ53x,Bipolar,51,66,8,Mc Davi
+63,spotify:track:3hycwch1V1aCbKGlcfKg0I,"Deu Meia Noite, Eu Sumi, Geral Soltando Fogos",63,87,2,Mc Delux
+64,spotify:track:6JIIejoN31NIn6BJsVS3cu,Oi Deus - Ao Vivo,58,58,4,Hugo & Guilherme
+65,spotify:track:685gjMmRjwLFrtCWtF2sXo,Rasteira - Ao Vivo,53,63,4,Henrique & Juliano
+66,spotify:track:7rglLriMNBPAyuJOMGwi39,Cold Heart - PNAU Remix,65,65,7,Elton John
+67,spotify:track:3IAfUEeaXRX9s9UdKOJrFI,Envolver,42,57,4,Anitta
+68,spotify:track:0wRn3ggAY1fIupTaVigdza,A Cara do Crime (Nós Incomoda),33,71,8,Mc Poze do Rodo
+69,spotify:track:3Ox3DxqqRCEEVCPnENVx3g,"Calma Bb, Tá nos Melhores Amigos",69,—,1,Mc Th
+70,spotify:track:6HV630GY0GT3RN2efFRmbP,Troca,54,76,4,Jorge & Mateus
+71,spotify:track:6RMYuqlTn8777j5arY9zhC,Cena de Amor,55,67,8,Brisa Star
+72,spotify:track:6Aw11M9NT2tBeEj3mPKrjy,Facas - Ao Vivo,72,91,3,Diego & Victor Hugo
+73,spotify:track:1r9xUipOqoNwggBpENDsvJ,Enemy (with JID) - from the series Arcane League of Legends,68,68,2,Imagine Dragons
+74,spotify:track:7vCvUJyjMxRkPeo19nxmuk,Coração Na Cama - Ao Vivo,69,92,3,Hugo & Guilherme
+75,spotify:track:2Ho2vEEJAZOAnpxl9GsFYR,Pegada de Malvado,74,74,3,Mc Danone
+76,spotify:track:2jPACjKR21inTnWeo3eHla,"Louis V, Menina Linda",32,59,8,Sidoka
+77,spotify:track:5r9CZJMoMmxio2AnJdxuDS,Pot-Pourri: Melhor Eu Ir / Ligando Os Fatos / Sonho de Amor / Deixa Eu Te Querer - Ao Vivo,77,80,8,Grupo Menos É Mais
+78,spotify:track:0PH49SrRKOFVWF81PobhW6,Unha de Gel,78,96,4,Os Barões Da Pisadinha
+79,spotify:track:2Gjt4rUHBUH0rMKpBg0hF4,Disco Arranhado - Funk Remix,73,93,2,Malu
+80,spotify:track:0wcAfve621R8p3sTQjjJXA,O Porte da 40,63,73,8,Mc Frog
+81,spotify:track:2QLbRVzixE282JSQjBz2DG,Liberdade (Quando o Grave Bate Forte),74,98,2,Alok
+82,spotify:track:7IG7laqVpcvIIULrwWP5SA,Vida Louca,58,81,8,Mc Poze do Rodo
+83,spotify:track:07Kp3cAQRY0iPp4ATMoehM,Ficante Fiel,74,85,3,Mad Dogz
+84,spotify:track:3jSG8oE8doxDxmpe5GlFee,"Não, Não Vou",46,61,8,Mari Fernandez
+85,spotify:track:5CbDKqtF6F6m1KUvsAf2Kf,Sorte - Ao Vivo,79,83,3,Diego & Victor Hugo
+86,spotify:track:7Ls0AYtBWAJtt7iORFc6zC,Não Quer Chifre,37,77,8,Mc Frog
+87,spotify:track:3HquWF2pZmWYu3WAEP9Heb,Só Não Divulga,50,94,2,Fernando & Sorocaba
+88,spotify:track:0m6XpDgZSyqyCg0HKOCaO8,Estelionato Afetivo - Ao Vivo,86,86,2,Douglas & Vinicius
+89,spotify:track:3Wrjm47oTz2sjIgck11l5e,Beggin',63,84,8,Måneskin
+90,spotify:track:7DETyuwRe61Ab57w90dJ37,Eu e Eu,78,78,3,Vitor e Luan
+91,spotify:track:5PjdY0CKGZdEuoNab3yDmX,STAY (with Justin Bieber),58,79,8,The Kid LAROI
+92,spotify:track:0RoVmAeG1dC9U34S6RCCIB,Quebrando Protocolo - Ao Vivo,49,75,6,Gusttavo Lima
+93,spotify:track:5ItttPiqUksUE240dJ9DT6,Faz Amor Comigo Só Hoje,47,95,3,Israel & Rodolffo
+94,spotify:track:1N19UVD4GRBFT6UrDaX6rk,Bebe e Vem Me Procurar / Quem Ama Sente Saudade (Ao Vivo),88,100,4,Turma do Pagode
+95,spotify:track:5BFz4pXzknmYYctjvLKJAB,Sentadinha Descarada,95,—,1,Zé Vaqueiro
+96,spotify:track:6KBITvbscpEpSIcsOSjww8,Mesa Falsa - Ao Vivo,82,90,3,Guilherme & Benuto
+97,spotify:track:5F2xRvRFkxDvqdFtUNAEyw,Se For Amor,47,60,8,João Gomes
+98,spotify:track:5emL18Je5WuruMhWr0gj4w,Eu Já Tava Bem - Ao Vivo,98,—,1,Wesley Safadão
+99,spotify:track:17UfXrL7Run3GyZJW4uRjC,Paradigmas,70,—,1,Jorge & Mateus
+100,spotify:track:41pFFOnh1glVNIlrWOpBjb,Se Joga no Passinho,40,—,1,Brisa Star

@@ -1,0 +1,101 @@
+rank,uri,track_name,peak,prev,streak,artist_names
+1,spotify:track:2qmG7dokbGpDGD0T5wORWt,Balanço da Rede,1,1,14,Matheus Fernandes
+2,spotify:track:1K8AtBJXcdq5mywMnZuARP,Termina Comigo Antes,1,2,12,Gusttavo Lima
+3,spotify:track:0sjhY8nPIm6cPOQfyUPmJe,ERRO PLANEJADO - Ao Vivo,3,3,10,Luan Santana
+4,spotify:track:4QWumyD2uwiePBBha9XBHI,No Ouvidinho,2,4,12,Felipe Amorim
+5,spotify:track:6Zw25LRLP0j0MsezDFIUM4,Mal Feito - Ao Vivo,1,5,23,Hugo & Guilherme
+6,spotify:track:546dFmvwFGBY7MJOkV5ctq,Todo Seu - Ao Vivo,6,6,7,Jorge & Mateus
+7,spotify:track:6Ulh9GPYz6JKdv04qc3q2U,Dengo,7,8,6,João Gomes
+8,spotify:track:3ShKPhFkexrwl7WoyTtNND,Tchuco Nela,7,7,9,MC Rogerinho
+9,spotify:track:2LEV3lTRxKqLBfmt5BWkLj,Não Pega Ninguém Ainda (Ao Vivo),9,15,3,Gusttavo Lima
+10,spotify:track:3XF598RmEUF3XW4XKo1lyP,Meu Número - Ao Vivo,9,10,10,Hugo & Guilherme
+11,spotify:track:11fqunD6qlOCrRd88kMOk6,Evento Cancelado - Ao Vivo,11,12,5,Henrique & Juliano
+12,spotify:track:3ITkrUvAA6gzxer2UIom3P,Molhando o Volante,4,11,28,Jorge & Mateus
+13,spotify:track:3sd2p4kE7xQmFH3lPnFl6h,sentaDONA (Remix) s2,2,14,14,Davi Kneip
+14,spotify:track:7qD2vjd3btuOgwpQPEY7ci,EU VOU COM CARINHO ELA QUER COM FORÇA,13,13,5,Mc Don Juan
+15,spotify:track:6hFwju6M40CKovKBPu5IpY,ACORDA PEDRINHO,1,9,6,Jovem Dionisio
+16,spotify:track:7bhvRvE56NHBvedx0EeALS,Comunicação Falhou - Ao Vivo,16,20,8,Mari Fernandez
+17,spotify:track:2ebFBmle5uXcdbrCAOvPcZ,Vagabundo Chora - Ao Vivo,16,16,19,Guilherme & Benuto
+18,spotify:track:53RxHysDJ0cjugMcPymwja,ABALO EMOCIONAL - Ao Vivo,5,17,20,Luan Santana
+19,spotify:track:4a0sqvCBo7aRIS4GzBQpnp,Kikando e Me Olhando,19,22,10,MC Braz
+20,spotify:track:14JKzKrJbPDflw8XyATMey,A Maior Saudade - Ao Vivo,6,19,36,Henrique & Juliano
+21,spotify:track:6BF3nZQkAg9qvE0DLVSfyH,Hotel Caro,21,66,2,Baco Exu do Blues
+22,spotify:track:5dFxhpYLOton7aawKsDeiS,Áudio Que Te Entrega,22,27,11,Leo Santana
+23,spotify:track:5zNxUkUW9WiV5oyg6gh2wB,DANÇARINA,1,18,19,PEDRO SAMPAIO
+24,spotify:track:5lCAtKxkZL6tFDyGX9t87j,Eu Já Tava Bem - Ao Vivo,17,23,29,Wesley Safadão
+25,spotify:track:42nZBOwXNdO24Ml032bLBS,Gatilho - Ao Vivo,19,21,14,Matheus & Kauan
+26,spotify:track:5PZAbR6JHYYV9xp5gv0XES,Bandido,26,—,1,Zé Felipe
+27,spotify:track:6nkoWsFZeFt5dUdNmlIceh,Bloqueado - Ao Vivo,2,24,30,Gusttavo Lima
+28,spotify:track:6Lk3kU7JcQ5dZ7jbmhJzQN,Melhor Ser uma Saudade,8,25,21,Zé Neto & Cristiano
+29,spotify:track:0tM4J8aID6qYZOE3e14sCj,Acordo - Ao Vivo,13,28,35,Henrique & Juliano
+30,spotify:track:2wSCalnGOnXdAJC0Fn8OUY,Vai Lá Em Casa Hoje,1,26,35,George Henrique & Rodrigo
+31,spotify:track:2IJPcsIjReWb0v4EdNuwLu,Assume a Gente - Ao Vivo,31,43,13,João Bosco e Gabriel
+32,spotify:track:6bTdZ7xfKp3NqqADJ8HLyj,Vampiro,10,29,12,Matuê
+33,spotify:track:6bwx7pcKJY05D9S6CVa1k6,Nem Namorado e Nem Ficante - Ao Vivo | Faixa Bônus,31,31,4,Israel & Rodolffo
+34,spotify:track:3jPp5Aukksz9Ir0gZy6lZM,Acabei de Terminar - Ao Vivo,30,30,11,Paulo e Nathan
+35,spotify:track:7gVzhRCrLRUBEGdS7zNTp0,Malvada,2,34,21,Zé Felipe
+36,spotify:track:0NBgyml7T0IvUNbXIkcSpH,Malvadão 3,1,32,27,Xamã
+37,spotify:track:75fCsUnTiDelE4HMd06t4O,Gostosinho Tu Cai,30,33,8,Mc Pepeu
+38,spotify:track:1ih3nbYJ0lugsku6065BC5,Me Chama de Amor - Arrochadeira Remix,35,35,6,O Tubarão
+39,spotify:track:7afaZ37wJJL6880z1NRgJS,Fim de Semana no Rio,17,37,12,Teto
+40,spotify:track:0qYW2jULeN9giEty0ee9Fy,Botadinha Saliente,6,36,19,MC Rogerinho
+41,spotify:track:0MKd4uZd8Ag8qyReZBTarP,Pino da Granada - Ao Vivo em Rio Preto,39,39,4,Murilo Huff
+42,spotify:track:0E0OENqh3jaZ4VpDFTOLGj,EU BEM QUE TE AVISEI - TU EMPINOU ELE PEI,29,38,9,Mc Delux
+43,spotify:track:4qsOrxBv09HhNSpsgMRXdC,Esqueça-Me Se For Capaz,1,41,36,Marília Mendonça
+44,spotify:track:3IMLoeLerS7TMpKjxUgAhx,Arranhão - Ao Vivo,2,40,36,Henrique & Juliano
+45,spotify:track:4SIBZgMomGFnrIWjmq7Np8,Desenrola Bate Joga de Ladin (feat. DJ Biel do Furduncinho),10,42,11,L7NNON
+46,spotify:track:72g37RoelSnovZakG5MwnF,Parada Louca,8,44,32,Mari Fernandez
+47,spotify:track:4Dvkj6JhhA12EX05fT7y2e,As It Was,27,46,12,Harry Styles
+48,spotify:track:4NJKCE1TBC653P3dCnto0u,Simplesmente Ela,34,45,13,Mc Gabzin
+49,spotify:track:71fwkaKdNrxiZZbkzSqmFJ,Que Rabão (feat. Mr. Catra e YG),33,47,8,Anitta
+50,spotify:track:75FEaRjZTKLhTrFGsfMUXR,Running Up That Hill (A Deal With God),47,48,4,Kate Bush
+51,spotify:track:30rrBGpna63eIJ2BrXlWDC,Minha Cópia Atual - Ao Vivo,43,49,12,Henrique & Juliano
+52,spotify:track:5vC8UAOHeG95ehRzZChniB,Ai Preto,52,—,1,L7NNON
+53,spotify:track:4grGI2vFnknrfmHT1JOVFU,Tesão Da Madrugada - Ao Vivo,30,50,19,George Henrique & Rodrigo
+54,spotify:track:3YvE7uo4ffseBoJPh8IhHp,Presepada,5,51,33,Marília Mendonça
+55,spotify:track:0roEMqT0P7Z82rJTwcID3Z,Felicidade Dela - Ao Vivo,26,52,13,Hugo & Guilherme
+56,spotify:track:1RgJ4lexKGNBlKnyxB5SRt,Balazul,56,65,2,Teto
+57,spotify:track:7fzgTaVhUxmEzjtcd9NdWo,Cê Tá Preparada - Ao Vivo,14,53,36,Tayrone
+58,spotify:track:1M5OUvKG03C0QtzvxRS4Zk,Depende,9,58,22,Dj Guuga
+59,spotify:track:5etfNcFAD9M8uibXpYMxfQ,Tu Tava Na Revoada - Ao Vivo,59,59,4,Wesley Safadão
+60,spotify:track:3xt7v3bMNnQ8ie8RjhmkX2,Imagina A Sentada - Ao Vivo,16,56,25,Matheus & Kauan
+61,spotify:track:28m65cMH7QXHzFnZSTtNHY,Não Sei o Que Lá,18,54,33,Marília Mendonça
+62,spotify:track:3QGxgNaqaFSpORp2OVLXHR,212,6,55,23,Chefin
+63,spotify:track:5yRgMxdDhdYlbUQNCOlW3o,Não Vou Te Bloquear - Ao vivo,18,62,24,Mc Don Juan
+64,spotify:track:4EVzu5mYyigjyLrryKbZs7,VERMELHO,14,60,19,Gloria Groove
+65,spotify:track:6ve9hbVnSgJ0vrsRpj18OH,Não Me Arranha - Ao Vivo,15,61,36,Gusttavo Lima
+66,spotify:track:3fSxnkjdgPucRCskjmAlgx,A Cara do Crime 3 (Brinde à Liberdade),57,57,4,Mc Poze do Rodo
+67,spotify:track:6W56j9ijl9n2l76Hs4hgGn,Larga AÍ Pra Ver - Ao Vivo,62,63,10,Léo & Raphael
+68,spotify:track:1TyxXIXVVpHwhKaF73z8nw,Rasteira - Ao Vivo,32,64,36,Henrique & Juliano
+69,spotify:track:347KmRWwYXcZSUgelz7Cit,Konteiner,69,—,1,Filipe Ret
+70,spotify:track:7AwVSKaQxpidrtYBerkHKk,Pipoco,70,—,1,Ana Castela
+71,spotify:track:28k6fDcRo7iONQhMxt2OFA,Clone,68,69,6,Júnior e Cézar
+72,spotify:track:2gkKA2pRAsMzbiGPo9gxsc,Água Nos Zói - Ao Vivo,28,68,36,Clayton & Romário
+73,spotify:track:45VwwcqkVl61khE9JT2OxK,Baile da Serra,56,67,6,Braão
+74,spotify:track:0yL7K9MzC20uBesZTPY81r,Pandora,8,73,28,DJ Matt D
+75,spotify:track:5VTjBl3ddZEiG2LrH4VzyR,Toma Toma Vapo Vapo,4,74,32,Zé Felipe
+76,spotify:track:2VATVdFqb7QqxfAcQPvNpc,Ex Alcoolizado - Ao Vivo,49,70,12,Israel & Rodolffo
+77,spotify:track:7pvrsbBKUQI2QmA74WCJa5,Ela e Ela,4,71,36,Zé Neto & Cristiano
+78,spotify:track:130HVxaVe9EYcLJmuOR9Rw,Até A Próxima Vida - Ao Vivo,49,92,3,Henrique & Juliano
+79,spotify:track:2vzp2rXiAZlcnkSlz5dtkR,Envolvidão - Ao Vivo Em Santa Catarina / 2022,66,72,4,Gustavo Mioto
+80,spotify:track:7HjZD0NPC1hzFpjUjo45GR,Me Sinto Abençoado,34,81,28,Mc Poze do Rodo
+81,spotify:track:6wrkP23fHC8KDHCfs8MpJ9,Chá De Casa Nova - Ao Vivo,49,76,28,Henrique & Juliano
+82,spotify:track:4GOs8fPjp4M9CBHanTMwsQ,Seu Perfil - Ao Vivo,54,75,21,Henrique & Juliano
+83,spotify:track:4OjLi2Ji9UhVsHjqzRGCsM,Quebrando Protocolo - Ao Vivo,39,77,34,Gusttavo Lima
+84,spotify:track:3sTNh0MwcpUe4VXEUPyU11,Sinal da Oração (Ao Vivo),84,—,1,Diego & Victor Hugo
+85,spotify:track:4vjU9a5q3IrsspW8Qin56l,Desgastou - Ao Vivo,47,78,14,Henrique & Juliano
+86,spotify:track:6KKT8dzP21J4WwBp9swjob,Sonho Dos Cria,86,—,1,Filipe Ret
+87,spotify:track:2kJRlOyrxsy7Ot3c5TZ8Q6,Meu Pedaço de Pecado,8,87,36,João Gomes
+88,spotify:track:6M6QZVBQCkcx1j7f6RpD5Q,Amava Nada - Ao Vivo,42,82,20,Lucas Lucco
+89,spotify:track:6qdJZIjxrPaJjaGqlXFLSs,Nota de Repúdio - Ao Vivo,3,79,36,Gusttavo Lima
+90,spotify:track:3FkeNbs9Zeiqkr3WkbOiGp,Envolver,1,80,16,Anitta
+91,spotify:track:4fSHADbZbhpZCT9oJpxwbP,Ameaça,2,84,35,Paulo Pires
+92,spotify:track:1dzF8qI9VkDnO0dkMfR529,Oi Deus - Ao Vivo,39,86,18,Hugo & Guilherme
+93,spotify:track:4nRa5qkXIfswPbt20rkslI,Debaixo do Cobertor,93,—,1,Felipe Amorim
+94,spotify:track:5qtQJJqJUjk2zNjRroqgLk,Tudo Nosso,94,—,1,Filipe Ret
+95,spotify:track:5mUH00xAH26BsmUvPxW2yk,Chegou um Áudio - Ao Vivo | Faixa Bônus,91,91,2,Israel & Rodolffo
+96,spotify:track:5Z4TYur0O9OxmxIo6GC2Gq,"Oi, Como Ce Tá?",21,97,17,Vulgo FK
+97,spotify:track:053zWWZDziDJd3U94x8RuP,Todo Mundo Menos Você,3,85,36,Marília Mendonça
+98,spotify:track:7tITqCiDuMqKfWhibaF8V7,Insônia 2,40,96,12,Tribo da Periferia
+99,spotify:track:1d7AtPeraWVsvI4U1YTHt1,Vestido Coladinho,27,93,6,Max e Luan
+100,spotify:track:0vlAXslkVt1HZ4Rx6JekLY,Terminei Mal Terminado - Ao Vivo,55,90,18,Henrique & Juliano
